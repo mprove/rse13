@@ -1,0 +1,138 @@
+
+body, p, td, li, dl   { color: #111; font-size: 14px; font-family: Helvetica, "Lucida Grande", Geneva, Arial, Swiss, SunSans-Regular }
+
+body                { background-color: #000 !important; background-image: url(../_media/design/back.jpg); background-repeat: repeat; background-position: 0 0; margin-top: 0; margin-right: 6%; margin-left: 6%; alink: "#ff99ff"; bgcolor: "white"; link: "red"; vlink: "#197ed7"; max-width:1222px     }
+a      { color: #444; text-decoration: none;}
+a img { color: #980000; text-decoration: none; background-color: transparent; border: none }
+a:visited  { color: #444; text-decoration: none;}
+a:visited img { color: #980000; text-decoration: none; border-bottom: 0 none; border-top-style: none; border-right-style: none; border-left-style: none; }
+a:hover    { color: #b22222; text-decoration: underline;}
+a:hover img { border-bottom: 0 none; border-top-style: none; border-right-style: none; border-left-style: none; }
+h1                    { color: #041435; font-size: 20px; font-family: Helvetica, "Lucida Grande", Arial, Geneva, Swiss, SunSans-Regular; margin-top: 36px; margin-bottom: 22px;
+	text-shadow: #bbb 1px 1px 2px }
+.title { color: #133697; font-weight: bold; font-size: 420%; line-height: 80%; letter-spacing: -2px; margin-bottom: 0; border-bottom: 1px solid #f66338   }
+.subtitle { color: #616161; font-size: 70%; font-family: Helvetica, Arial, Geneva, Swiss, SunSans-Regular; margin-top: 28px }
+h2               { color: #222; font-size: 15px; font-family: Helvetica, "Lucida Grande", Arial, Geneva, Swiss, SunSans-Regular; margin-top: 42px; margin-bottom: 22px; text-shadow: #bbb 1px 1px 2px }
+h3             { color: #222; font-size: 13px; font-family: Helvetica, "Lucida Grande", Arial, Geneva, Swiss, SunSans-Regular; margin-top: 20px; text-shadow: #bbb 1px 1px 2px }
+.big { color: #ccc; font-weight: bold; font-size: 330%; text-align: right ; position: relative; float: right; }
+h4          { color: #222; font-size: 12px; font-family: Helvetica, "Lucida Grande", Arial, Geneva, Swiss, SunSans-Regular }
+h5      { color: #222; font-size: 11px; font-family: Helvetica, "Lucida Grande", Arial, Geneva, Swiss, SunSans-Regular }
+h6     { color: #222; font-weight: normal; font-size: 11px; font-family: Helvetica, "Lucida Grande", Arial, Geneva, Swiss, SunSans-Regular }
+p   { line-height: 1.5em; margin-top: 0.3em; margin-bottom: 0.3em }
+dt { margin-top: 6px }
+ul li { line-height: 1.5em; list-style-image: url(../_media/design/marker.gif);}
+ol li { line-height: 1.5em; }
+blockquote, blockquote p    { font-style: italic; font-size: 1.3em; line-height: 1em; font-family: Optima, Candara, Lucida ; text-align: left; margin-left: 80px; }
+em { font-style: normal; background-color: #00fff0; }
+.sans9     { font-size: 10px; font-family: Helvetica, "Lucida Grande", Geneva, Arial, Swiss, SunSans-Regular }
+.sans11      { font-size: 11px; font-family: Helvetica, "Lucida Grande", Geneva, Arial, Swiss, SunSans-Regular }
+.email      { font-size: 11px; font-family: Monaco, "Courier New", Courier, monospace; margin-right: 44px; margin-left: 44px }
+.email blockquote { font-style: normal; margin-left: -30pt; padding-left: 35pt; border-left: 3px solid #696969 }
+.figure       { color: #444; font-size: 9pt; font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular; text-align: left; margin-bottom: 1em; padding-left: 30pt }
+.gray     { color: #696969 }
+.marker { background-color: #ffff4f }
+.markergreen  { background-color: #93ff67 }
+.markerred { background-color: #ff8fb1 }
+.legend   { font-size: 9px; font-family: Helvetica, "Lucida Grande", Geneva, Arial, Swiss, SunSans-Regular; margin-top: 55px }
+.invisible { background-color: #bababa; display: none }
+.indent   { margin-right: 30pt; margin-left: 30pt }
+.header, #pageheader
+        { background-color: transparent; background-repeat: repeat; background-attachment: scroll; background-position: left bottom; margin-bottom: 18px; padding-top: 17px; padding-left: 22px; z-index: 2; padding-right: 11px;}
+.header p  { background: no-repeat right bottom; padding-bottom: 15px; position: relative }
+.header a,a img     { font-size: 1em; border-bottom: medium none }
+
+.maincolumn,
+#content,
+.formcontent,
+.preview,
+#accesskeys + h1 + p { background-color: #e6e6eb; background-repeat: repeat; background-attachment: scroll; background-position: left top; padding: 22px; z-index: 2; border: solid 7px orange; -moz-border-radius: 33px; -moz-box-shadow: 3px 3px 3px rgba(194, 194, 194, 0.3); -webkit-border-radius: 33px; -webkit-box-shadow: 3px 3px 3px rgba(194, 194, 194, 0.3); border-radius: 33px; box-shadow: 3px 3px 3px rgba(194, 194, 194, 0.3)   }
+.maincolumn h1   { background: no-repeat right top; margin-top: -22px; margin-right: -22px; padding-top: 33px; padding-right: 50px; position: relative }
+.maincolumn p,li,dl { margin-right: 10% }
+.c_topright { background: url(../_media/design/c_topright.gif) no-repeat right top }
+.marginalnote { float: left; margin-right: -125px; position: relative; left: -125px; width: 115px }
+
+/* nav buttons */
+.localnav { font-weight: bold; line-height: 220%; margin-top: 1em; margin-bottom: 2em    }
+csobj .localnav { margin-top: 5em; }
+.localnav a,
+#navlinks a
+   { color: #11a341; font-weight: bold; background-image: url(../_media/design/buttonnormal.gif) !important; margin-right: -1px; margin-left: -2px; padding: 3px 6px  !important; border-style: solid; border-width: 1px; border-color: white #aaa #aaa white; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px   }
+
+.localnav a:visited,
+#navlinks a:visited
+ { color: #575055; background-image: url(../_media/design/buttonvisited.gif) !important  }
+
+.localnav a:hover,
+#navlinks a:hover
+ { color: white; background-image: url(../_media/design/buttonhover.gif) !important; }
+.tweetmeme   { float: right; margin-top: -50px; margin-bottom: 3px; margin-left: 3px; z-index: 11 ; display: none; }
+csobj .tweetmeme {display:block}
+.impressum { font-style: italic; text-align: right; }
+.countdown { color: #55507c; font-size: 160%; }
+/* Safari 3 */
+.portrait  { margin-right: 5px; -moz-border-radius: 11px; -webkit-border-radius: 11px; border-radius: 11px
+ 	 }
+
+.reflection { 
+	-webkit-box-reflect: below 0px
+	-webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.7, transparent), color-stop(1.1, white));
+	}
+
+/* Layout */
+div.container  { padding-right: 170px; position: relative }
+div.c-primary  { }
+div.c-secondary { clear: both; position: absolute; top: -20px; right: 0px; width: 150px }
+
+/* Tag Cloud */
+h2.delicious-banner { width: 0px; height: 0px; visibility: hidden }
+.delicious-list a { border: none }
+/* link indicators */
+.maincolumn a[href^="http"] {
+	padding-left: 11px;
+	background: transparent url(../_media/general/linkExternal.gif) no-repeat center left; }
+
+.maincolumn a[href^="http://www.slideshare.net"],
+.maincolumn a[href^="http://slideshare.net"]
+{
+	padding-left: 16px;
+	background: transparent url(../_media/general/slideshare.gif) no-repeat center left; }
+
+
+.maincolumn a[href$=".pdf"] {
+	padding-left: 16px;
+	background: transparent url(../_media/general/pdf.gif) no-repeat center left; }
+
+.maincolumn a[href^="http://www.amazon."] {
+	padding-left: 18px;
+	background: transparent url(../_media/general/amazon16.gif) no-repeat center left; }
+	
+/* link indicator exceptions */	
+.nolinkimage {}
+.maincolumn .nolinkimage a,
+.maincolumn a.nolinkimage,
+.maincolumn .feedburnerFeedBlock a,
+.maincolumn .delicious-list a,
+.maincolumn #flickr_badge_wrapper a,
+.maincolumn h1 a,
+.maincolumn h3 a,
+.maincolumn .legend a
+	{
+	padding-left: 0px;
+	background: none;
+	}
+		
+/* wiki.raumschiffer.de */
+#main { margin-bottom: 33px; }
+#pageheaderall {margin-top: 22px}
+#main #content { margin-right: 0; margin-left: 0; padding: 11px 11px 22px; }
+
+#main #content li { line-height: 1.5em; }
+#main td.logo a { border-bottom-style: none; border-bottom-width: 0; }
+
+#navlinks { font-size: 110%; margin-bottom: 7px; }
+#navlinks a { margin-left: -2px; }
+
+img[src$="logo.png"] { width:640px !important; height:150px !important;}
+li h1,
+#wikiheader + h1,
+#accesskeys + h1 { color: #5a5fa2; text-shadow: none }

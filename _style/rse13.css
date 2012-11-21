@@ -1,0 +1,50 @@
+/* typography */
+h2,h3,h4, blockquote, blockquote p { font-family: "adelle", Georgia, "Courier New", Courier, Monaco, monospace; font-size: 30px;font-weight:400; }
+p,li { font-family: "museo-sans", Arial, Helvetica, Geneva, SunSans-Regular, sans-serif;font-weight:300; }
+
+h2 {color:#00afee;text-align:center;}
+h2.referenten {color:#000;}
+
+p, li { color: #fff; font-size: 15px;line-height: 26px; }
+blockquote, blockquote p {color:#fff;text-align:center;}
+a { color: #259bd9; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+
+
+/* layout */
+html{margin:0;padding:0;}
+body { margin: 0; }
+
+.header 	{background-color:#1d638c;text-align:center;margin:0px;}
+.header li 	{display:inline;margin:0 15px 0 0;text-transform: uppercase;font-size: 12px;color:#fff;}
+
+ul.navigation {margin:0px;color:#fff;border:3px solid #1d638c;}
+
+.section { padding-top: 1em; padding-bottom: 3em; }
+.section.stage { background-color: #1d6088;background-image: url('http://www.supersoon.net/RSE_temp/images/stage_background.jpg');padding-top: 100px;background-position: center top; background-repeat: repeat-x; }
+.section.eins { background-color: #1d628b; }
+.section.zwei { background-color: #4091c5; }
+.section.drei { background-color: #b7d6ea; }
+.section.vier { background-color: #ffffff; }
+.section.map { padding: 0; }
+
+/* .section:nth-of-type(2n+1) { background-color: #f0f0f0; } */
+.maincolumn { width: 100%; max-width: 960px; margin: 0 auto; padding: 0 20px; }
+.speaker h3:nth-of-type(2n+1), .speaker h3:nth-of-type(2n+1) + p { margin-left: 200px; }
+.speaker h3:nth-of-type(2n), .speaker h3:nth-of-type(2n) + p { text-align: right; margin-right: 200px; }
+.speaker h3:nth-of-type(2n+1) img { margin-left: -200px; }
+.speaker h3:nth-of-type(2n) img { margin-right: -200px; }
+iframe.video, object.video, iframe[src^="http://www.youtube.com"] { margin-bottom: 11px;}
+.footer { margin: 0 auto; }
+.sponsors { text-align: center; }
+.sponsors img { margin: 11px 44px; 44px }
+
+
+
+/* link indicators */
+.maincolumn a[href^="http://www.slideshare.net"],
+.maincolumn a[href^="http://slideshare.net"] {
+	padding-left: 16px; background: url(../_media/general/slideshare.gif) no-repeat left center; margin-left: 16px; }
+.maincolumn a[href^="http://prezi.com"] {
+	padding-left: 16px; background: url(../_media/general/prezi.png) no-repeat left center; margin-left: 16px; }
