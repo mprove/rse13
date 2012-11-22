@@ -45,6 +45,6 @@ iframe.video, object.video, iframe[src^="http://www.youtube.com"] { margin-botto
 /* link indicators */
 .maincolumn a[href^="http://www.slideshare.net"],
 .maincolumn a[href^="http://slideshare.net"] {
-	padding-left: 16px; background: url(../_media/general/slideshare.gif) no-repeat left center; margin-left: 16px; }
+	padding-left: 16px; background: url(../-media/general/slideshare.gif) no-repeat left center; margin-left: 16px; }
 .maincolumn a[href^="http://prezi.com"] {
-	padding-left: 16px; background: url(../_media/general/prezi.png) no-repeat left center; margin-left: 16px; }
+	padding-left: 16px; background: url(../-media/general/prezi.png) no-repeat left center; margin-left: 16px; }
