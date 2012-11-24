@@ -41,7 +41,9 @@ ul.navigation {margin:0px;color:#fff;border:3px solid #1d638c;}
 .speaker h3:nth-of-type(2n), .speaker h3:nth-of-type(2n) + p { text-align: right; margin-right: 200px; }
 .speaker h3:nth-of-type(2n+1) img { margin-left: -200px; }
 .speaker h3:nth-of-type(2n) img { margin-right: -200px; }
-.twocolumns { column-count: 2; -webkit-column-count: 2; }
+.twocolumns {
+	column-count: 2; -webkit-column-count: 2; -moz-column-count: 2;
+	column-width: 244px; -moz-column-width: 244; -webkit-column-width: 244px;}
 iframe.video, object.video, iframe[src^="http://www.youtube.com"] { margin-bottom: 11px;}
 .footer { margin: 0 auto; }
 .sponsors { text-align: center; }
