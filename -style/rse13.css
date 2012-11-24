@@ -1,5 +1,5 @@
 /* typography */
-h2,h3,h4, blockquote, blockquote p, .reference { font-family: "adelle", Georgia, "Courier New", Courier, Monaco, monospace; }
+h2,h3,h4, blockquote, blockquote p, .quotereference { font-family: "adelle", Georgia, "Courier New", Courier, Monaco, monospace; }
 p,li { font-family: "museo-sans", Arial, Helvetica, Geneva, SunSans-Regular, sans-serif; }
 
 h2,h3,h4, blockquote, blockquote p { font-size: 30px;font-weight:400; }
@@ -15,6 +15,7 @@ a { color: #259bd9; text-decoration: none; }
 a:hover { text-decoration: underline; }
 
 
+
 /* layout */
 html, body{margin:0;padding:0;}
 .header 	{background-color:#1d638c;text-align:center;margin:0px;}
@@ -28,8 +29,12 @@ ul.navigation {margin:0px;color:#fff;border:3px solid #1d638c;}
 .section.zwei { background-color: #4091c5; }
 .section.drei { background-color: #b7d6ea; }
 .section.vier { background-color: #ffffff; }
-.section.drei h2,
-.section.drei h3 {color:#000;}
+.section.eins h2,
+.section.zwei h2 {color:#fff;}
+.section.drei h2, 
+.section.vier h2,
+.section.eins p, .section.eins a,
+.section.zwei p, .section.zwei a {color:#000;}
 .section.map { padding: 0; }
 
 /* .section:nth-of-type(2n+1) { background-color: #f0f0f0; } */
