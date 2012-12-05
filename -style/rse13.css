@@ -1,12 +1,14 @@
 /* typography */
-h1,h2 {font-family: 'Titillium Web', sans-serif;text-transform: uppercase;}
-h3,h4, blockquote, blockquote p, .quotereference { font-family: 'Anaheim', sans-serif; }
+h1,h2,h3 {font-family: 'Titillium Web', sans-serif;text-transform: uppercase;}
+h4, blockquote, blockquote p, .quotereference { font-family: 'Anaheim', sans-serif; }
 p,li { font-family: 'Anaheim', sans-serif; }
 
 a { color: #259bd9; text-decoration: none; }
 a:hover { text-decoration: underline; }
 
-h2,h3,h4, blockquote, blockquote p { font-size: 30px; }
+h2     { font-size: 30px; }
+h3,h4, blockquote, blockquote p { font-size: 24px; }
+
 h1,h2 {color:#00afee;text-align:center;}
 h1 {color:#ffffff;font-size: 40px;}
 h3,h3 a{color:#00afee;}
@@ -26,8 +28,8 @@ ul.navigation {margin:0px;color:#fff;padding:3px;}
 .footer .navigation a { color: #259bd9; }
 
 .section { padding-top: 1em; padding-bottom: 3em; }
-.section.stage { background-color: #1d6088;background-image: url('http://www.supersoon.net/RSE_temp/images/stage_background.jpg');padding-top: 150px;background-position: center top; background-repeat: repeat-x; }
-.section.eins { background-color: #1d628b; }
+.section.stage { background-color: #214b66;background-image: url('http://www.supersoon.net/RSE_temp/images/stage_background.jpg');padding-top: 150px;background-position: center top; background-repeat: repeat-x; }
+.section.eins { background-color: #215072; }  /* vorher #1d628b */
 .section.zwei, .section.zwei a { color: #000; background-color: #4091c5; }
 .section.drei { background-color: #b7d6ea; }
 .section.vier { background-color: #ffffff; }
