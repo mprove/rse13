@@ -18,6 +18,7 @@ p, li { color: #fff; font-size: 15px;line-height: 26px;}
 blockquote, blockquote p { color:#fff; line-height: 1.5em; text-align:center; margin:1em 0 0.5em; }
 .quotereference { color:#00afee;text-align:center;font-size: 24px; margin-bottom:50px;}
 
+
 /* layout */
 html, body{margin:0;padding:0;}
 .header 	{background-color:#1d638c;text-align:center;margin:0px;}
@@ -69,6 +70,8 @@ iframe.video, object.video, iframe[src^="http://www.youtube.com"] { margin-botto
 /* link indicators */
 .maincolumn a[href^="http://www.slideshare.net"],
 .maincolumn a[href^="http://slideshare.net"] {
-	padding-left: 16px; background: url(../-media/general/slideshare.gif) no-repeat left center; margin-left: 16px; }
+	padding-left: 16px; background: url(../-media/general/slideshare.gif) no-repeat left center; margin-left: 10px; }
 .maincolumn a[href^="http://prezi.com"] {
-	padding-left: 16px; background: url(../-media/general/prezi.png) no-repeat left center; margin-left: 16px; }
+	padding-left: 16px; background: url(../-media/general/prezi.png) no-repeat left center; margin-left: 10px; }
+.maincolumn	a.button {background-color:white;padding:5px 10px;-webkit-border-radius: 3px;-moz-border-radius: 3px;border-radius: 3px;}
+
