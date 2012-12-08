@@ -67,11 +67,21 @@ iframe.video, object.video, iframe[src^="http://www.youtube.com"] { margin-botto
 .sponsors { margin: 0 auto;column-count: 4; -webkit-column-count: 4; -moz-column-count: 4; }
 
 
-/* link indicators */
+/* button and link indicators */
+.maincolumn	a.button {
+	padding:5px 10px;
+	-webkit-border-radius: 3px;-moz-border-radius: 3px;border-radius: 3px;}
+
 .maincolumn a[href^="http://www.slideshare.net"],
 .maincolumn a[href^="http://slideshare.net"] {
-	padding-left: 16px; background: url(../-media/general/slideshare.gif) no-repeat left center; margin-left: 10px; }
+	margin-left: 16px;
+	padding-left: 28px;
+	background: url(../_media/general/slideshare.gif) no-repeat 10px center;  }
 .maincolumn a[href^="http://prezi.com"] {
-	padding-left: 16px; background: url(../-media/general/prezi.png) no-repeat left center; margin-left: 10px; }
-.maincolumn	a.button {background-color:white;padding:5px 10px;-webkit-border-radius: 3px;-moz-border-radius: 3px;border-radius: 3px;}
+	margin-left: 16px;
+	padding-left: 28px;
+	background: url(../_media/general/prezi.png) no-repeat 10px center;  }
 
+.maincolumn	a.button {
+	background-color:white;
+	}
