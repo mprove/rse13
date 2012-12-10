@@ -1,22 +1,19 @@
 /* typography */
-h1,h2,h3 {font-family: 'Titillium Web', sans-serif;text-transform: uppercase;}
+h1,h2,h3,.footer > a {font-family: 'Titillium Web', sans-serif;text-transform: uppercase;}
 h4, blockquote, blockquote p, .quotereference { font-family: 'Anaheim', sans-serif; }
 p,li { font-family: 'Anaheim', sans-serif; }
 
 a { color: #259bd9; text-decoration: none; }
 a:hover { text-decoration: underline; }
-
-h2     { font-size: 30px; }
+h1 {font-size: 40px;}
+h2,.footer > a     { font-size: 30px; }
 h3,h4, blockquote, blockquote p { font-size: 24px; }
 
-h1,h2 {color:#00afee;text-align:center;}
-h1 {color:#ffffff;font-size: 40px;}
+h1,h2 {text-align:center;}
 h3,h3 a{color:#00afee;}
-h2.referenten {color:#000;}
-
-p, li { color: #fff; font-size: 15px;line-height: 26px;}
+p, li { color: #4091c5; font-size: 15px;line-height: 26px; }
 blockquote, blockquote p { color:#fff; line-height: 1.5em; text-align:center; margin:1em 0 0.5em; }
-.quotereference { color:#00afee;text-align:center;font-size: 24px; margin-bottom:50px;}
+.quotereference { color:#00afee;text-align:center;font-size: 24px;font-weight:400; margin-top:0px;}
 
 
 /* layout */
@@ -28,17 +25,19 @@ ul.navigation {margin:0px;color:#fff;padding:3px;}
 .footer ul.navigation { background-color: #f0f0f0; text-align:center; }
 .footer .navigation a { color: #259bd9; }
 
-.section { padding-top: 1em; padding-bottom: 3em; }
+.section, .sponsors { background-color: #fff; padding-top: 1em; padding-bottom: 3em; }
 .section.stage { background-color: #214b66;background-image: url('http://www.supersoon.net/RSE_temp/images/stage_background.jpg');padding-top: 150px;background-position: center top; background-repeat: repeat-x; }
-.section.eins { background-color: #215072; }  /* vorher #1d628b */
-.section.zwei, .section.zwei a { color: #000; background-color: #4091c5; }
-.section.drei { background-color: #b7d6ea; }
-.section.vier { background-color: #ffffff; }
-.section.eins h2, .section.eins p,
-.section.zwei h2, .section.zwei p {color:#fff;}
 .section.map { padding: 0; }
-.section.drei h2, 
-.section.vier h2 {color:#4091c5;}
+.section.eins { background-color: #214b66; }
+.section.zwei, .section.zwei a { color: #000; background-color: #316f97; }
+.section.drei { background-color: #4091c5; }
+.section.vier { background-color: #b7d6ea; }
+.section.stage h1, .section.eins h1, .section.eins h2, .section.eins p, .section.eins li, .section.zwei h2, .section.zwei p, .section.zwei li .section.drei h2 {color:#fff;}
+.section.eins h3, .section.zwei h3 { color: #00aced; }
+.section.drei h3 { color: #b7d6ea; }
+.section.drei p, .section.drei li, .section.vier p, .section.vier li { color: #112633; }
+.section h1, .section h2, .section h3, .sponsors h2 {color:#214b66;}
+.section.vier h3 {color:#0e9bd5;}
 
 /* .section:nth-of-type(2n+1) { background-color: #f0f0f0; } */
 .maincolumn { font-family: 'Anaheim', sans-serif;width: 100%; max-width: 960px; margin: 0 auto; padding: 0px; }
@@ -64,8 +63,8 @@ iframe.video, object.video, iframe[src^="http://www.youtube.com"] { margin-botto
 .sponsors { text-align: center; margin-bottom: 5em; }
 .sponsors img { margin: 11px 44px; }
 
-.sponsors { margin: 0 auto;column-count: 4; -webkit-column-count: 4; -moz-column-count: 4; }
-
+.footer { margin: 0 auto; }
+.footer > a { color: #f0f; font-weight: 700; text-align: center; margin-bottom: 1em; display: block; }
 
 /* button and link indicators */
 .maincolumn	a.button {
@@ -74,13 +73,13 @@ iframe.video, object.video, iframe[src^="http://www.youtube.com"] { margin-botto
 
 .maincolumn a[href^="http://www.slideshare.net"],
 .maincolumn a[href^="http://slideshare.net"] {
-	margin-left: 16px;
+	margin-left: 5px;
 	padding-left: 28px;
-	background: url(../_media/general/slideshare.gif) no-repeat 10px center;  }
+	background: url(../-media/general/slideshare.gif) no-repeat 10px center;  }
 .maincolumn a[href^="http://prezi.com"] {
 	margin-left: 16px;
 	padding-left: 28px;
-	background: url(../_media/general/prezi.png) no-repeat 10px center;  }
+	background: url(../-media/general/prezi.png) no-repeat 10px center;  }
 
 .maincolumn	a.button {
 	background-color:white;
