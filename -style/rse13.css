@@ -1,34 +1,33 @@
 /* typography */
-h1,h2,h3,.footer > a {font-family: 'Titillium Web', sans-serif;text-transform: uppercase;}
-h4, blockquote, blockquote p, .quotereference { font-family: 'Anaheim', sans-serif; }
-p,li { font-family: 'Anaheim', sans-serif; }
+h1,h2,.footer > a {font-family:'Bangers', sans-serif;}
+h4,h3,blockquote, blockquote p, .quotereference {font-family: 'Varela', sans-serif;}
+p,li {font-family: 'Varela', sans-serif;}
 
-a { color: #259bd9; text-decoration: none; }
-a:hover { text-decoration: underline; }
-h1 {font-size: 40px;}
-h2,.footer > a     { font-size: 30px; }
-h3,h4, blockquote, blockquote p { font-size: 24px; }
+a 					{color: #259bd9; text-decoration: none;}
+a:hover 			{text-decoration: underline;}
+h1 					{font-size: 3.4em;}
+h2,.footer > a 		{font-size: 1.8em;}
+h3,h4, blockquote, blockquote p { font-size: 1.4em; }
 
 h1,h2 {text-align:center;}
 h3,h3 a{color:#00afee;}
-p, li { color: #4091c5; font-size: 15px;line-height: 26px; }
-blockquote, blockquote p { color:#fff; line-height: 1.5em; text-align:center; margin:1em 0 0.5em; }
-.quotereference { color:#00afee;text-align:center;font-size: 24px;font-weight:400; margin-top:0px;}
-
+p, li { color: #fff; font-size: 0.9em;line-height: 2em;}
+blockquote, blockquote p { color:#fff; line-height: 1.6em; text-align:center; margin:1em 0 0.5em; }
+.quotereference { color:#00afee;text-align:center;font-size: 1.3em; margin-top: 1em; margin-bottom: 2em;}
 
 /* layout */
 html, body{margin:0;padding:0;}
 .header 	{background-color:#1d638c;text-align:center;margin:0px;}
-.header li, .footer li 	{display:inline;margin:0 15px 0 0;text-transform: uppercase;font-size: 14px;color:#fff;}
-ul.navigation {margin:0px;color:#fff;padding:3px;}
+.header li, .footer li 	{display:inline;margin:0 15px 0 0;text-transform: uppercase;font-size: 0.8em;color:#fff;}
+ul.navigation {margin:0px;color:#fff;padding:0.6em;}
 .navigation a { color: #fff; }
 .footer ul.navigation { background-color: #f0f0f0; text-align:center; }
 .footer .navigation a { color: #259bd9; }
 
 .section, .sponsors { background-color: #fff; padding-top: 1em; padding-bottom: 3em; }
-.section.stage { background-color: #214b66;background-image: url('http://www.supersoon.net/RSE_temp/images/stage_background.jpg');padding-top: 150px;background-position: center top; background-repeat: repeat-x; }
+.section.stage { background-color: #214b66;background-image: url('http://www.supersoon.net/RSE_temp/images/stage_background.jpg');padding-top: 10em;padding-bottom: 3em;background-position: center top; background-repeat: repeat-x; }
 .section.map { padding: 0; }
-.section.eins { background-color: #214b66; }
+.section.eins { background-color: #214b66; }  /* #1a577e  */
 .section.zwei, .section.zwei a { color: #000; background-color: #316f97; }
 .section.drei { background-color: #4091c5; }
 .section.vier { background-color: #b7d6ea; }
