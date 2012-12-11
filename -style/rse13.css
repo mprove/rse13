@@ -5,8 +5,8 @@ p,li {font-family: 'Varela', sans-serif;}
 
 a 					{color: #259bd9; text-decoration: none;}
 a:hover 			{text-decoration: underline;}
-h1 					{font-size: 3.4em;}
-h2,.footer > a 		{font-size: 1.8em;}
+h1 					{ font-size: 3.4em; font-weight: 500; }
+h2,.footer > a 		{ font-size: 1.8em; font-weight: 500; letter-spacing: 1px; }
 h3,h4, blockquote, blockquote p { font-size: 1.4em; }
 
 h1,h2 {text-align:center;}
