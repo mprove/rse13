@@ -25,9 +25,9 @@ ul.navigation {margin:0px;color:#fff;padding:0.6em;}
 .footer .navigation a { color: #259bd9; }
 
 .section, .sponsors { background-color: #fff; padding-top: 1em; padding-bottom: 3em; }
-.section.stage { background-color: #214b66;background-image: url('http://www.supersoon.net/RSE_temp/images/stage_background.jpg');padding-top: 10em;padding-bottom: 3em;background-position: center top; background-repeat: repeat-x; }
+.section.stage { background-color: #1a577e;background-image: url('http://www.supersoon.net/RSE_temp/images/stage_background.jpg');padding-top: 10em;padding-bottom: 3em;background-position: center top; background-repeat: repeat-x; }
 .section.map { padding: 0; }
-.section.eins { background-color: #214b66; }  /* #1a577e  */
+.section.eins { background-color: #1a577e; }  /* #214b66  */
 .section.zwei, .section.zwei a { color: #000; background-color: #316f97; }
 .section.drei { background-color: #4091c5; }
 .section.vier { background-color: #b7d6ea; }
