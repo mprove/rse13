@@ -28,19 +28,20 @@ ul.navigation 		{ margin:0px;color:#fff;padding:0.6em;}
 .footer .navigation a { color: #259bd9;text-decoration:none;}
 
 .section, .sponsors { background-color: #fff; padding-top: 1em; padding-bottom: 3em; }
-.section.stage		{ background-color: #1a577e;background-image: url('http://www.supersoon.net/RSE_temp/images/stage_background.jpg');padding-top: 10em;padding-bottom: 3em;background-position: center top; background-repeat: repeat-x; }
+.section.stage		{ color: #fff;background-color: #1a577e;background-image: url('http://www.supersoon.net/RSE_temp/images/stage_background.jpg');padding-top: 10em;padding-bottom: 3em;background-position: center top; background-repeat: repeat-x; }
 .section.stage h2 	{margin-top:3em;}
+.section.stage a 	{color: #fff;}
 .section.map 		{ padding: 0; }
-.section.eins 		{ background-color: #1a577e; }  /* #214b66  */
-.section.zwei, .section.zwei a { color: #fff; background-color: #316f97; }
+.section.eins 		{ background-color: #1a577e; }
+.section.zwei 		{ color: #fff; background-color: #316f97; }
 .section.drei 		{ background-color: #4091c5; }
 .section.vier 		{ background-color: #b7d6ea; }
-.section.stage h1, .section.stage h2, .section.eins h1, .section.eins h2, .section.eins p, .section.eins li, .section.zwei h2, .section.zwei p, .section.zwei li, .section.drei h2 {color:#fff;}
+.section.stage h1, .section.stage h2, .section.eins h1, .section.eins h2, .section.eins p, .section.eins a, .section.eins li, .section.zwei a, .section.zwei h2, .section.zwei p, .section.zwei li, .section.drei h2 {color:#fff;}
 .section.eins h3, .section.eins h4, .section.zwei h3, .section.zwei h4 { color:#00aced; }
-.section.drei p, .section.drei li, .section.vier p, .section.vier li { color: #112633; }
-.section.drei h3	{ color:#b7d6eb; }
-/* .section h1, .section h2, .section h3, .sponsors h2 { color:#204b67;} */
-.section.vier h3	{ color:#0e9bd5;}
+.section.drei p, .section.drei a, .section.drei li, .section.vier p, .section.vier a, .section.vier li { color: #112633; }
+.section.drei h3	{ color:#b7d6eb;}
+.section.vier h2	{ color:#214b66;}
+.section.vier h3	{ color:#0f9ed7;}
 
 .maincolumn 		{ width: 100%; max-width: 960px; margin: 0 auto; padding: 0px; }
 .twocolumns 		{ column-count: 2; -webkit-column-count: 2; -moz-column-count: 2;
@@ -88,4 +89,4 @@ iframe.video, object.video, iframe[src^="http://www.youtube.com"] { margin-botto
 	padding-left: 28px;
 	background: url(../-media/general/prezi.png) no-repeat 10px center;  }
 
-.maincolumn	a.button { background-color:white; }
+.maincolumn	a.button { color:#ac40cd;background-color:white; }
