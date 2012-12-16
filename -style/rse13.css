@@ -10,6 +10,7 @@ h3, blockquote, blockquote p { font-size: 1.4em;font-weight: normal;}
 h4					{ font-size: 1.2em;font-weight: normal;}
 
 h1,h2				{ text-align:center;}
+h1+h2				{ margin-top: -1.2em; }
 h3,h4				{ margin-top:2.5em; }
 p, li, dl			{ color: #fff; font-size: 0.9em; line-height: 2em;}
 a					{ color: #fff }
