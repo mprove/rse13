@@ -69,6 +69,7 @@ ul.navigation 		{ margin:0px;color:#fff;padding:0.6em;}
 .speaker h3:nth-of-type(2n), .speaker h3:nth-of-type(2n) + p { text-align: right; margin-right: 200px; }
 .speaker h3:nth-of-type(2n+1) img { margin-left: -200px; }
 .speaker h3:nth-of-type(2n) img { margin-right: -200px; }
+.speaker h3 img { margin-top: 6px; opacity:0.66; }
 	
 iframe.video, object.video, iframe[src^="http://www.youtube.com"], iframe[src^="http://player.vimeo"], iframe[src^="http://www.slideshare"] { margin-top: 11px; margin-bottom: 11px; }
 
