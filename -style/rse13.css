@@ -65,12 +65,16 @@ ul.navigation 		{ margin:0px;color:#fff;padding:0.6em;}
 .twitter-friends img:hover { opacity: 1; }
 
 /* speaker */
-.speaker h3:nth-of-type(2n+1), .speaker h3:nth-of-type(2n+1) + p,
-.speaker h3:nth-of-type(2n+1), .speaker h3:nth-of-type(2n+1) + p + p { margin-left: 200px; }
-.speaker h3:nth-of-type(2n), .speaker h3:nth-of-type(2n) + p,
-.speaker h3:nth-of-type(2n), .speaker h3:nth-of-type(2n) + p + p { text-align: right; margin-right: 200px; }
-.speaker h3:nth-of-type(2n+1) img { margin-left: -200px; }
+.speaker h3:nth-of-type(2n+1), 
+.speaker h3:nth-of-type(2n+1) + p,
+.speaker h3:nth-of-type(2n+1) + p + p { margin-left: 200px; }
+.speaker h3:nth-of-type(2n+1) img { margin-left: -200px !important; }
+
+.speaker h3:nth-of-type(2n),
+.speaker h3:nth-of-type(2n) + p,
+.speaker h3:nth-of-type(2n) + p + p { text-align: right; margin-right: 200px; }
 .speaker h3:nth-of-type(2n) img { margin-right: -200px; }
+
 .speaker h3 img { margin-top: 6px; opacity:0.81; }
 	
 iframe.video, object.video, iframe[src^="http://www.youtube.com"], iframe[src^="http://player.vimeo"], iframe[src^="http://www.slideshare"] { margin-top: 11px; margin-bottom: 11px; }
