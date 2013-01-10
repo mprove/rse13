@@ -49,10 +49,12 @@ ul.navigation 		{ margin:0px;color:#fff;padding:0.6em;}
 
 .maincolumn 		{ width: 100%; max-width: 960px; margin: 0 auto; padding: 0px; }
 
-.twocolumns 		{ column-count: 2; -webkit-column-count: 2; -moz-column-count: 2;}
-.threecolumns 		{ column-count: 3; -webkit-column-count: 3; -moz-column-count: 3;}	
-.fourcolumns 		{ column-count: 4; -webkit-column-count: 4; -moz-column-count: 4;}
-.twocolumns, .threecolumns, .fourcolumns{ column-width: 300px; -moz-column-width: 300; -webkit-column-width: 300px; }
+.twocolumns 		{ column-count: 2; -webkit-column-count: 2; -moz-column-count: 2;
+					  column-width: 360px; -moz-column-width: 360px; -webkit-column-width: 360px; }
+.threecolumns 		{ column-count: 3; -webkit-column-count: 3; -moz-column-count: 3;
+					  column-width: 240px; -moz-column-width: 240px; -webkit-column-width: 240px; }
+.fourcolumns 		{ column-count: 4; -webkit-column-count: 4; -moz-column-count: 4;
+					  column-width: 240px; -moz-column-width: 240px; -webkit-column-width: 240px; }
 .twocolumns > p:first-child, .threecolumns > p:first-child, .fourcolumns > p:first-child { margin-top: 0; }
 
 /* twitter wall */
