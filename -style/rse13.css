@@ -27,7 +27,7 @@ ul.navigation 		{ margin:0px;color:#fff;padding:0.6em;}
 .footer .navigation a { color: #259bd9;text-decoration:none;}
 
 .section, .sponsors { background-color: #fff; padding-top: 3em; padding-bottom: 5em; }
-.section.stage		{ color: #fff;background-color: #1a577e;background-image: url('http://www.supersoon.net/RSE_temp/images/stage_background.jpg');padding-top: 10em;padding-bottom: 3em;background-position: center top; background-repeat: repeat-x; }
+.section.stage		{ color: #fff;background-color: #1a577e;background-image: url(../2013/-media/stage_background.jpg);padding-top: 10em;padding-bottom: 3em;background-position: center top; background-repeat: repeat-x; }
 .section.stage h2 	{margin-top:3em;}
 .section.stage a 	{color: #fff;}
 .section.map 		{ padding: 0; }
@@ -48,29 +48,41 @@ ul.navigation 		{ margin:0px;color:#fff;padding:0.6em;}
 .section.vier h3	{ color:#0f9ed7;}
 
 .maincolumn 		{ width: 100%; max-width: 960px; margin: 0 auto; padding: 0px; }
+
 .twocolumns 		{ column-count: 2; -webkit-column-count: 2; -moz-column-count: 2;
-					  column-width: 244px; -moz-column-width: 244; -webkit-column-width: 244px;}
+					  column-width: 360px; -moz-column-width: 360px; -webkit-column-width: 360px; }
 .threecolumns 		{ column-count: 3; -webkit-column-count: 3; -moz-column-count: 3;
-					  column-width: 244px; -moz-column-width: 244; -webkit-column-width: 244px;}	
-.fourcolumns 		{ column-count: 4; -webkit-column-count: 4; -moz-column-count: 4;}
+					  column-width: 240px; -moz-column-width: 240px; -webkit-column-width: 240px; }
+.fourcolumns 		{ column-count: 4; -webkit-column-count: 4; -moz-column-count: 4;
+					  column-width: 240px; -moz-column-width: 240px; -webkit-column-width: 240px; }
+.twocolumns > p:first-child, .threecolumns > p:first-child, .fourcolumns > p:first-child { margin-top: 0; }
 
 /* twitter wall */
-.twitter-friends img { margin:0 11px 11px 0;
-					-webkit-mask-image: url(2013/-media/mask48c.png);
-					-moz-mask-image: url(2013/-media/mask48c.png);
-					-o-mask-image: url(2013/-media/mask48c.png);
-					mask-image: url(2013/-media/mask48c.png);
-					opacity: 0.5;
+.twitter-friends img { margin:0 11px 11px 0; }
+img.crew{ width: 48px; height: 48px; margin-right: 5px; margin-bottom: -16px; }
+.twitter-friends img, img.crew { 
+	opacity: 0.5;
+	-webkit-transition: opacity 3.3s linear;
+	-moz-transition: opacity 3.3s linear;
+	-o-transition: opacity 3.3s linear;
 					}
-.twitter-friends img:hover { opacity: 1; }
+.twitter-friends img:hover, a:hover img.crew {
+	 opacity: 1;
+	-webkit-transition: opacity 0.3s linear;
+	-moz-transition: opacity 0.3s linear;
+	-o-transition: opacity 0.3s linear; }
 
 /* speaker */
-.speaker h3:nth-of-type(2n+1), .speaker h3:nth-of-type(2n+1) + p,
-.speaker h3:nth-of-type(2n+1), .speaker h3:nth-of-type(2n+1) + p + p { margin-left: 200px; }
-.speaker h3:nth-of-type(2n), .speaker h3:nth-of-type(2n) + p,
-.speaker h3:nth-of-type(2n), .speaker h3:nth-of-type(2n) + p + p { text-align: right; margin-right: 200px; }
-.speaker h3:nth-of-type(2n+1) img { margin-left: -200px; }
+.speaker h3:nth-of-type(2n+1), 
+.speaker h3:nth-of-type(2n+1) + p,
+.speaker h3:nth-of-type(2n+1) + p + p { margin-left: 200px; }
+.speaker h3:nth-of-type(2n+1) img { margin-left: -200px !important; }
+
+.speaker h3:nth-of-type(2n),
+.speaker h3:nth-of-type(2n) + p,
+.speaker h3:nth-of-type(2n) + p + p { text-align: right; margin-right: 200px; }
 .speaker h3:nth-of-type(2n) img { margin-right: -200px; }
+
 .speaker h3 img { margin-top: 6px; opacity:0.81; }
 	
 iframe.video, object.video, iframe[src^="http://www.youtube.com"], iframe[src^="http://player.vimeo"], iframe[src^="http://www.slideshare"] { margin-top: 11px; margin-bottom: 11px; }
@@ -93,3 +105,18 @@ iframe.video, object.video, iframe[src^="http://www.youtube.com"], iframe[src^="
 	background: url(../-media/general/prezi.png) no-repeat 10px center;  }
 
 .maincolumn	a.button { color:#ac40cd;background-color:white; }
+
+
+/* iPad */
+@media only screen and (max-device-width:1024px) {
+* {font-size:100%}
+.twitter-friends img, img.crew { opacity: 0.77; }
+}
+/* iPhone */
+@media only screen and (max-device-width: 640px){
+* {font-size:120%}
+.twocolumns, .threecolumns, .fourcolumns{ column-count: 1; -webkit-column-count: 1; -moz-column-count: 1; }
+.twitter-friends img, img.crew { opacity: 0.77; width: 96px; height: 96px; }
+.sponsors img { height:140px; width:auto; }
+}
+
