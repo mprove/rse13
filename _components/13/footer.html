@@ -5,25 +5,34 @@
 		<title></title>
 		<style type="text/css" media="all"><!--
 .dsR1 /*agl rulekind: base;*/ { width: 180px; height: 70px; }
+.dsR7 /*agl rulekind: base;*/ { width: 181px; height: 70px; }
+.dsR6 /*agl rulekind: base;*/ { width: 218px; height: 70px; }
 --></style>
-
-		<link href='http://fonts.googleapis.com/css?family=Titillium+Web:900' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Anaheim' rel='stylesheet' type='text/css'>
+		<csimport user="social-blue.html" occur="76">
+			<link href='http://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
+			<link href='http://fonts.googleapis.com/css?family=Varela' rel='stylesheet' type='text/css'>
+		</csimport>
 	</head>
 
 	<body>
 		<div class="sponsors">
-		<h2>Sponsoren</h2>
-			<a title="freifunk.net" href="http://start.freifunk.net/"><img src="../../_media/logo/freifunk.png" alt="" height="70" width="73" border="0"></a><a title="Human Interface Design" href="http://www.human-interface.de/"><img class="dsR1" src="../../_media/logo/hid.png" alt="Human Interface Design" border="0" /></a><a title="Sponsoren gesucht" href="../../2013/sponsoring.html"><img src="../../2013/-media/parker.gif" alt="Sponsoren gesucht" width="109" height="71" border="0"></a></div>
+			<h2><a id="sponsoren" name="sponsoren"></a>Sponsoren</h2>
+			<a title="eparo" href="http://www.eparo.de/"><img class="dsR7" src="../../-media/logo/eparo.png" alt="eparo" border="0"></a><a title="freifunk.net" href="http://start.freifunk.net/"><img src="../../-media/logo/freifunk.png" alt="freifunk" height="70" width="73" border="0"></a><a title="Human Interface Design" href="http://www.human-interface.de/"><img class="dsR1" src="../../-media/logo/hid.png" alt="Human Interface Design" border="0" /></a><a title="Sponsoren gesucht" href="../../2013/sponsoring.html"><img src="../../2013/-media/parker.gif" alt="Sponsoren gesucht" width="109" height="71" border="0"></a><a title="effective WEBWORK" href="http://www.effective-webwork.de/"><img class="dsR6" src="../../-media/logo/effectivewebwork.png" alt="effective WEBWORK" border="0"></a>
+		</div>
+		  <a href="/_components/13/footer.html#top" class="scroll scotty">Beam me up!</a>
 		<div class="footer">
-		  <ul class="navigation">
-			<li><a href="../../index.html">Home</a></li>
-			<li><a href="../../media/index.html">Mediathek</a></li>
-			<li><a href="../../impressum.html">Impressum</a></li>
-			<li><a href="http://www.facebook.com/raumschifferde">facebook</a></li>
-			<li><a href="http://twitter.com/raumschifferde">twitter</a></li>
-			<li><a href="#">Beam me up!</a></li>
-		  </ul>
+			<csobj csref="social-blue.html" occur="76" t="Component">
+				<ul class="social">
+					<li><a title="Tickets f&uuml;r das #RSE13" href="http://wiki.raumschiffer.de"><img src="../../-media/general/ticket.png" alt="Tickets" width="22" height="18" border="0" /></a></li>
+					<li><a title="Mediathek" href="../../media/index.html"><img src="../../-media/general/media.png" alt="Mediathek" width="22" height="18" border="0" /></a></li>
+					<li><a title="facebook" href="http://www.facebook.com/raumschifferde"><img src="../../-media/general/fb.png" alt="facebook" width="22" height="18" border="0" /></a></li>
+					<li><a title="twitter" href="http://twitter.com/raumschifferde"><img width="22" height="18" src="../../-media/general/twitter.png" alt="twitter" border="0" /></a></li>
+				</ul>
+			</csobj>
+			<ul class="navigation">
+				<li><a href="../../index.html">RSE13</a></li>
+				<li><a href="../../impressum.html">Impressum</a></li>
+			</ul>
 		</div>
 		<!-- Start of StatCounter Code -->
 		<script type="text/javascript">

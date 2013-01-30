@@ -8,32 +8,65 @@
 		<title>Raum Schiff Erde 2013</title>
 		<link href="-style/rse13.css" rel="stylesheet" type="text/css" media="all" />
 		<style type="text/css" media="all"><!--
-
+.scroll { }
 --></style>
 		<meta name="keywords" content="Raum Schiff Erde, Raumschiff Erde, RSE13, Futurologischer Kongress, Hamburg" />
 		<meta name="description" content="Raum Schiff Erde 2013 - Ein Futurulogischer Kongress in Hamburg fuer digitale Philosophie, Netz-Kultur und Interaktionsdesign mit nachhaltig globalem Anspruch"/>
 		<meta name="ROBOTS" content="index">
 		<meta name="language" content="de"/>
-		<csimport user="_components/13/footer.html" occur="40">
+		<meta name="viewport" width="device-width">
+		<meta name="viewport" width="device-width">
+		<meta property="og:site_name" content="Raum Schiff Erde" />
+		<meta property="og:type" content="website" />
+		<meta property="og:image" content="http://www.raumschiffer.de/_media/brand/twitter13.jpg" />
+		
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
+		<script type="text/javascript"><!--
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top-42}, 1555); });
+				});
+			//-->
+		</script>
+		<csimport user="_components/13/header-home.html" occur="69">
 			<style type="text/css" media="all"><!--
-.dsR1 /*agl rulekind: base;*/ { width: 180px; height: 70px; }
+
 --></style>
-		</csimport>
-		<csimport user="_components/13/header.html" occur="69">
 			<link href='http://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
 			<link href='http://fonts.googleapis.com/css?family=Varela' rel='stylesheet' type='text/css'>
+		</csimport>
+		<csimport user="_components/13/footer.html" occur="40">
+			<csimport user="_components/13/social-blue.html" occur="76">
+				<link href='http://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
+				<link href='http://fonts.googleapis.com/css?family=Varela' rel='stylesheet' type='text/css'>
+			</csimport>
+			<style type="text/css" media="all"><!--
+.dsR1 /*agl rulekind: base;*/ { width: 180px; height: 70px; }
+.dsR7 /*agl rulekind: base;*/ { width: 181px; height: 70px; }
+.dsR6 /*agl rulekind: base;*/ { width: 218px; height: 70px; }
+--></style>
 		</csimport>
 	</head>
 
 	<body>
 
-		<div class="header">
-			<csobj csref="_components/13/header.html" occur="69" t="Component">
+		<div class="header" id="top">
+			<csobj csref="_components/13/header-home.html" occur="69" t="Component"><csobj csref="_components/13/social-white.html" occur="44" t="Component">
+					<ul class="social">
+						<li><a title="Tickets f&uuml;r das #RSE13" href="http://wiki.raumschiffer.de"><img src="-media/general/ticket-white.png" alt="Tickets" width="22" height="18" border="0" /></a></li>
+						<li><a title="Mediathek" href="media/index.html"><img src="-media/general/media-white.png" alt="Mediathek" width="22" height="18" border="0" /></a></li>
+						<li><a title="facebook" href="http://www.facebook.com/raumschifferde"><img src="-media/general/fb-white.png" alt="facebook" width="22" height="18" border="0" /></a></li>
+						<li><a title="twitter" href="http://twitter.com/raumschifferde"><img width="22" height="18" src="-media/general/twitter-white.png" alt="twitter" border="0" /></a></li>
+					</ul>
+				</csobj>
 				<ul class="navigation">
-					<li><a href="index.html">Home</a></li>
-					<li><a href="media/index.html">Mediathek</a></li>
-					<li><a href="http://www.facebook.com/raumschifferde">facebook</a></li>
-					<li><a href="http://twitter.com/raumschifferde">twitter</a></li>
+					<li><a href="index.html">RSE13</a></li>
+					<li><a class="scroll" href="/index.html#referenten">Delegierte</a></li>
+					<li><a class="scroll" href="/index.html#map">Flugkoordinaten &amp; Tickets</a></li>
+					<li><a class="scroll" href="/index.html#crew">Crew</a></li>
+					<li><a class="scroll" href="/index.html#tweets">Tweets</a></li>
+					<li><a class="scroll" href="/index.html#sponsoren">Sponsoren</a></li>
 				</ul>
 			</csobj></div>
 		<div class="section stage">
@@ -42,89 +75,80 @@
 				<blockquote>
 					»It is a widely held but a grievously mistaken belief that civil courage finds exercise only in the context of world-shaking events. To the contrary, its most arduous exercise is often in those small contexts in which the challenge is to overcome the fears induced by petty concerns over career, over our relationships to those who appear to have power over us, over whatever may disturb the tranquility of our mundane existence.«</blockquote>
 				<p class="quotereference">– Joseph Weizenbaum in »Computer Power and Human Reason« 1976</p>
-				<p class="twocolumns">Das #RSE13 ist eine Veranstaltung für digitale Philosophie, Netz-Kultur und Interaktionsdesign mit nachhaltig globalem Anspruch. Für andere ist es schlicht eine intellektuelle Jam-Session, die viel Inspiration und Anregung bietet. Nach <a href="2010/index.html">2010</a> und <a href="2011/index.html">2011</a> landet das Raumschiff am 24.2.2013 wieder in Hamburg. Es richtet sich an Freidenker, Medienkünstler, Interaktionsdesigner, Idealisten und Weltverbesserer.</p>
+				<div class="twocolumns">
+					<p>Das #RSE13 ist eine Veranstaltung für digitale Philosophie, Netz-Kultur und Interaktionsdesign mit nachhaltig globalem Anspruch. Für andere ist es schlicht eine intellektuelle Jam-Session, die viel Inspiration und Anregung bietet. Nach <a href="2010/index.html">2010</a> und <a href="2011/index.html">2011</a> landet das Raumschiff am 24.2.2013 wieder in Hamburg. Es richtet sich an Freidenker, Medienkünstler, Interaktionsdesigner, Idealisten und Weltverbesserer.</p>
+				</div>
+				<p></p>
 			</div>
 		</div>
 		<div class="section zwei">
 			<div class="maincolumn speaker">
-				<h2><a id="referenten" name="referenten"></a>Die Referenten - Draft</h2>
-				<h3><a title="freifunk.net" href="http://www.freifunk.net/"><img src="2013/-media/portrait/juergen.png" alt="Jürgen Neumann" width="166" height="166" align="left" border="0" /></a>Jürgen Neumann</h3>
-				<p>Jürgen Neumann ist Berater für IT-Strategie und Implementierung und hat in den vergangenen 20 Jahren für zahlreiche kommerzielle und nicht-kommerzielle Projekte und Organisationen gearbeitet. Im Jahr 2002 hat er <a href="http://www.freifunk.net">freifunk.net</a>, eine Kampagne zur Verbreitung von Know-how über den Bau von selbstverwalteten drahtlosen Funknetzwerken, mitbegründet. Dann 2007 die &quot;Open Hardware Initiative&quot;, die im Jahr 2008 den ersten &quot;Open Technology Summit&quot; in Taiwan organisiert hat. Im Augenblick versucht er die <a href="http://www.ohanda.org">Open Source Hardware and Design Alliance ohanda.org</a> an den Start zu bringen und engagiert sich aktiv für ein offeneres Lizenzmodell des Funkfrequenzspektrums bei der <a href="http://openspectrum.eu">Open Spectrum Alliance Europe</a>.</p>
-				<p></p>
-				<h3>Jeremy Tai Abbett<a href="http://jeremy.abbett.net"><img src="2013/-media/portrait/jeremy.png" alt="Jeremy Tai Abbett" width="166" height="166" align="right" border="0" /></a></h3>
-				<p>It's not easy sticking a label on Jeremy. Born in Vietnam and raised in Minnesota and Texas, Jeremy is more American than Vietnamese but decides to reside in Germany. Jeremy's higher education has landed him in such diverse places such as Wisconsin, Germany, and Italy. It was in Italy that his focus moved away from the screen and into physical computing working with Casey Reas (processing) and Masimo Banzai (ardunio) among others. In 1996 he co-founded Fork Unstable Media in Hamburg and in 2001 co-founded <a href="http://www.truthdaredoubledare.com">Truth Dare Double Dare</a> in New York City. Jeremy makes his living consulting for brands and balances this by collaborating with academic institutions in developing projects that lie at the intersection of art and science. And time permitting, he occasionally laces up his skates for a game of ice-hockey.</p>
-				<p><a href="http://twitter.com/jeremytai"><img src="-media/general/twitter.png" alt="" width="22" height="18" border="0" /></a></p>
-				<h3>Dirk Platzek<a title="Wunschfeld" href="http://www.wunschfeld.net/"><img src="2013/-media/portrait/dirk.png" alt="Dirk Platzek" width="166" height="166" align="left" border="0" /></a></h3>
-				<p>Dirk Platzek is a former dancer and became an interaction designer in 2000 after he graduated with an MFA in 'Design and Technology' from the Parsons School of Design in New York. That year he founded his company <a href="http://www.wunschfeld.net/">Wunschfeld Interaction Design</a>. Wunschfeld's work is concerned with the specific requirements of human perception and strives to create both aesthetically pleasing as well as useful and efficient systems. He taught a major studio class at Parsons MFA programm (Interface Studio) and also lectures regularly at the University of Applied Sciences Salzburg (Digital Experiments and Interface Design).</p>
-				<p><a href="http://twitter.com/wunschfeld"><img src="-media/general/twitter.png" alt="" width="22" height="18" border="0" /></a></p>
-				<h3>Kai von Luck<img src="2013/-media/portrait/kai.png" alt="Jeremy Tai Abbett" width="166" height="166" align="right" border="0" /></h3>
-				<p>Kommend aus der Forschung im Bereich der künstlichen Intelligenz ist Kai von Luck seit 1992 <a href="http://users.informatik.haw-hamburg.de/%7eluck/">als Professor an der HAW Hamburg</a> Initiator von einer Vielzahl von außergewöhnlichen Projekten. Seien es autonom Fußball spielende Roboter, <a href="http://livingplace.informatik.haw-hamburg.de/blog/">mitdenkende Wohnung</a> oder Kunstausstellungen schafft Kai es Studenten, Besucher und Partner aus Wirtschaft, Wissenschaft und Politik gleichermaßen zu begeistern und die klassische Informatik in einen bunten und interdisziplinären Kontext zu setzen.</p>
-				<p><a href="https://twitter.com/KaivonLuck/"><img src="-media/general/twitter.png" alt="" width="22" height="18" border="0" /></a></p>
-				<h3>Julia Kloiber, Friedrich Lindenberg und Christian Heise<br />
-					Open Data: Was hat das mit mir zu tun?<img src="2013/-media/portrait/julia.png" alt="Julia Kloiber" width="166" height="166" align="left" border="0" /></h3>
-				<p><strong>Julia Kloiber</strong> ist als Projektleiterin unter anderem für die Projekte <a href="http://stadtlandcode.de">Stadt Land &lt;Code&gt;</a> und <a href="http://appsandthecity.net">Apps and the City</a> verantwortlich. Sie studierte New Media und Digital Culture an der University of Utrecht. Eine besondere Herausforderung im Bereich von Open Data liegt für sie darin, das Thema so aufzubereiten, dass eine breitere Masse an Menschen versteht, wie wichtig und wertvoll offene Daten für Demokratie und Gesellschaft sind und Open Data so stärker auf die politische Agenda rückt. <a href="https://twitter.com/j_kloiber"><img src="-media/general/twitter.png" alt="" width="22" height="18" border="0" /></a></p>
-				<p><a href="http://pudo.org"><img class="portrait" src="2013/-media/portrait/friedrich.png" alt="Friedrich Lindenberg" width="166" height="166" align="left" border="0" /></a><strong>Friedrich Lindenberg</strong> arbeitet als Softwareentwickler in den Bereichen Open Data, Transparenz und Beteiligung. Als Mitglied der <a href="http://okfn.de">Open Knowledge Foundation</a> trägt er zu <a href="http://openspending.org">OpenSpending</a> (OffenerHaushalt) bei, einem internationalen Projekt welches Finanzdaten zugänglich macht, sowie zu <a href="http://ckan.org">CKAN</a>, einem gemeinschaftlich betriebenem Datenkatalog. Er ist der Autor der Software <a href="http://wiki.liqd.net/Adhocracy">Adhocracy</a>, einer Platform für die gemeinsame Entwicklung politischer Entwürfe, die von der Internet-Enquete des Bundestags und verschiedenen Parteien eingesetzt wird. <a href="http://twitter.com/#!/pudo"><img src="-media/general/twitter.png" alt="" width="22" height="18" border="0" /></a></p>
-				<p><img class="portrait" src="2013/-media/portrait/christianh.png" alt="Christian Heise" width="166" height="166" align="left" border="0" /><strong>Christian Heise</strong> ist Diplom-Politologe und wissenschaftlicher Mitarbeiter am Hybrid Publishing Lab im EU Innovations-Inkubator an der Leuphana Universität Lüneburg, wo er zum Thema Open Science promoviert. Er ist Vorstandsmitglied bei der <a href="http://okfn.de">Open Knowledge Foundation Deutschland</a> sowie im Förderverein für freie Netzwerke e.V..</p>
-				<p></p>
-				<p></p>
-				<p></p>
+				<h2><a id="referenten" name="referenten"></a>Delegierte</h2>
+				<h3><img src="2013/-media/portrait/julia.png" alt="Julia Kloiber" width="166" height="166" align="left" border="0" />Julia Kloiber</h3>
+				<p>Julia ist als Projektleiterin unter anderem für die Projekte <a href="http://stadtlandcode.de">Stadt Land &lt;Code&gt;</a> und <a href="http://appsandthecity.net">Apps and the City</a> verantwortlich. Sie studierte New Media und Digital Culture an der University of Utrecht. Eine besondere Herausforderung im Bereich von Open Data liegt für sie darin, das Thema so aufzubereiten, dass eine breitere Masse an Menschen versteht, wie wichtig und wertvoll offene Daten für Demokratie und Gesellschaft sind und Open Data so stärker auf die politische Agenda rückt.</p>
+				<p><a href="https://twitter.com/j_kloiber"><img src="-media/general/twitter.png" alt="" width="22" height="18" border="0" /></a></p>
+				<h3><a href="http://pudo.org"><img src="2013/-media/portrait/friedrich.png" alt="Friedrich Lindenberg" width="166" height="166" align="right" border="0" /></a>Friedrich Lindenberg</h3>
+				<p>Friedrich arbeitet als Softwareentwickler in den Bereichen Open Data, Transparenz und Beteiligung. Als Mitglied der <a href="http://okfn.de">Open Knowledge Foundation</a> trägt er zu <a href="http://openspending.org">OpenSpending</a> (OffenerHaushalt) bei, einem internationalen Projekt welches Finanzdaten zugänglich macht, sowie zu <a href="http://ckan.org">CKAN</a>, einem gemeinschaftlich betriebenem Datenkatalog. Er ist der Autor der Software <a href="http://wiki.liqd.net/Adhocracy">Adhocracy</a>, einer Platform für die gemeinsame Entwicklung politischer Entwürfe, die von der Internet-Enquete des Bundestags und verschiedenen Parteien eingesetzt wird.</p>
+				<p><a href="http://twitter.com/#!/pudo"><img src="-media/general/twitter.png" alt="" width="22" height="18" border="0" /></a></p>
+				<h3><img src="2013/-media/portrait/christianh.png" alt="Christian Heise" width="166" height="166" align="left" border="0" />Christian Heise</h3>
+				<p><strong>Christian Heise</strong> ist Diplom-Politologe und wissenschaftlicher Mitarbeiter am Hybrid Publishing Lab im EU Innovations-Inkubator an der Leuphana Universität Lüneburg, wo er zum Thema Open Science promoviert. Er ist Vorstandsmitglied bei der <a href="http://okfn.de">Open Knowledge Foundation Deutschland</a> sowie im Förderverein für freie Netzwerke e.V..</p>
 				<h3>Simona H.<a href="http://www.creavity.de/"><img src="2013/-media/portrait/simona.png" alt="Simona H." width="166" height="166" align="right" border="0" /></a></h3>
 				<p>Simona v1.85beta. <a href="http://blog.donci.de">Zwischen Nexus und Limbo</a>. Zwischen technischer Redaktion und Literatur. Zwischen Bremen und Hamburg. Oder wie Genette sagte: Often the proper answer would be that it depends on the day, the context, and the way the wind is blowing. Norddeutsch by Nature.</p>
 				<p><a href="https://twitter.com/doncish"><img src="-media/general/twitter.png" alt="" width="22" height="18" border="0" /></a></p>
-				<h3>Deva Tamminga<img src="2013/-media/portrait/deva2.png" alt="" width="166" height="166" align="left" border="0" /></h3>
-				<p>Nach ihrem Studium der Philosophie &amp; Kulturreflexion und Performance Studies gründete Deva mit ihrer Partnerin Diana SpeedSpiration.com, eine Inpsirationsplattform, die zu spielerischen Brainstroming einlädt. Ihre Auseinandersetzung mit Philosophie und Performance geschieht immer auch aus der Perspektive des Tanzes, dem sie sich seit Kinderjahren aktiv wie beruflich widmete. Während ihres Studiums und ihrer Tätigkeit als wissenschaftliche Mitarbeiterin an der Universität Hamburg beschäftigte sie sich mit Kreativitätstechniken, der Performance des Organisierens sowie der Medialität von Leiblichkeit – Interessen, die auch in Zukunft direkt wie indirekt in ihre Tätigkeiten einfließen.</p>
-				<h3>Diana Knodel<img src="2013/-media/portrait/diana.png" alt="" width="32" height="32" align="right" border="0" /></h3>
-				<p>Diana Knodel studierte Medien-Informatik an der Universität Ulm und hat dort und an der Universität Regensburg das E-Mentoring-Programm CyberMentor aufgebaut und als Projektkoordinatorin gearbeitet. Nach ihrer Promotion kam sie im Jahr 2010 nach Hamburg und arbeitet als Projekt- und Teamleiterin in der IT Branche. Aktuell nutzt sie die Elternzeit, um sich neben ihrem Baby Oskar ihrem zweiten Baby SpeedSpiration.com zu widmen.</p>
+				<h3><a title="freifunk.net" href="http://www.freifunk.net/"><img src="2013/-media/portrait/juergen.png" alt="Jürgen Neumann" width="166" height="166" align="left" border="0" /></a>Jürgen Neumann</h3>
+				<p>Jürgen Neumann ist Berater für IT-Strategie und Implementierung und hat in den vergangenen 20 Jahren für zahlreiche kommerzielle und nicht-kommerzielle Projekte und Organisationen gearbeitet. Im Jahr 2002 hat er <a href="http://www.freifunk.net">freifunk.net</a>, eine Kampagne zur Verbreitung von Know-how über den Bau von selbstverwalteten drahtlosen Funknetzwerken, mitbegründet. Dann 2007 die &quot;Open Hardware Initiative&quot;, die im Jahr 2008 den ersten &quot;Open Technology Summit&quot; in Taiwan organisiert hat. Im Augenblick versucht er die <a href="http://www.ohanda.org">Open Source Hardware and Design Alliance ohanda.org</a> an den Start zu bringen und engagiert sich aktiv für ein offeneres Lizenzmodell des Funkfrequenzspektrums bei der <a href="http://openspectrum.eu">Open Spectrum Alliance Europe</a>.</p>
+				<h3>Jeremy Tai Abbett<a href="http://jeremy.abbett.net"><img src="2013/-media/portrait/jeremy.png" alt="Jeremy Tai Abbett" width="166" height="166" align="right" border="0" /></a></h3>
+				<p>It's not easy sticking a label on Jeremy. Born in Vietnam and raised in Minnesota and Texas, Jeremy is more American than Vietnamese but decides to reside in Germany. Jeremy's higher education has landed him in such diverse places such as Wisconsin, Germany, and Italy. It was in Italy that his focus moved away from the screen and into physical computing working with Casey Reas (processing) and Masimo Banzai (ardunio) among others. In 1996 he co-founded Fork Unstable Media in Hamburg and in 2001 co-founded <a href="http://www.truthdaredoubledare.com">Truth Dare Double Dare</a> in New York City. Jeremy makes his living consulting for brands and balances this by collaborating with academic institutions in developing projects that lie at the intersection of art and science. And time permitting, he occasionally laces up his skates for a game of ice-hockey.</p>
+				<p><a href="http://twitter.com/jeremytai"><img src="-media/general/twitter.png" alt="" width="22" height="18" border="0" /></a></p>
+				<h3>Deva Tamminga<img src="2013/-media/portrait/deva.png" alt="" width="166" height="166" align="left" border="0" /></h3>
+				<p>Nach ihrem Studium der Philosophie &amp; Kulturreflexion und Performance Studies gründete Deva mit ihrer Partnerin Diana <a href="http://speedspiration.com">SpeedSpiration.com</a>, eine Inpsirationsplattform, die zu spielerischen Brainstroming einlädt. Ihre Auseinandersetzung mit Philosophie und Performance geschieht immer auch aus der Perspektive des Tanzes, dem sie sich seit Kinderjahren aktiv wie beruflich widmete. Während ihres Studiums und ihrer Tätigkeit als wissenschaftliche Mitarbeiterin an der Universität Hamburg beschäftigte sie sich mit Kreativitätstechniken, der Performance des Organisierens sowie der Medialität von Leiblichkeit – Interessen, die auch in Zukunft direkt wie indirekt in ihre Tätigkeiten einfließen.</p>
+				<h3>Diana Knodel<img src="2013/-media/portrait/diana3.png" alt="" width="166" height="166" align="right" border="0" /></h3>
+				<p>Diana Knodel studierte Medien-Informatik an der Universität Ulm und hat dort und an der Universität Regensburg das E-Mentoring-Programm CyberMentor aufgebaut und als Projektkoordinatorin gearbeitet. Nach ihrer Promotion kam sie im Jahr 2010 nach Hamburg und arbeitet als Projekt- und Teamleiterin in der IT Branche. Aktuell nutzt sie die Elternzeit, um sich neben ihrem Baby Oskar ihrem zweiten Baby <a href="http://speedspiration.com">SpeedSpiration.com</a> zu widmen.</p>
+				<h3>Dirk Platzek<a title="Wunschfeld" href="http://www.wunschfeld.net/"><img src="2013/-media/portrait/dirk.png" alt="Dirk Platzek" width="166" height="166" align="left" border="0" /></a></h3>
+				<p>Dirk Platzek is a former dancer and became an interaction designer in 2000 after he graduated with an MFA in 'Design and Technology' from the Parsons School of Design in New York. That year he founded his company <a href="http://www.wunschfeld.net/">Wunschfeld Interaction Design</a>. Wunschfeld's work is concerned with the specific requirements of human perception and strives to create both aesthetically pleasing as well as useful and efficient systems. He taught a major studio class at Parsons MFA programm (Interface Studio) and also lectures regularly at the University of Applied Sciences Salzburg (Digital Experiments and Interface Design).</p>
+				<p><a href="http://twitter.com/wunschfeld"><img src="-media/general/twitter.png" alt="" width="22" height="18" border="0" /></a></p>
+				<h3>Kai von Luck<a href="http://users.informatik.haw-hamburg.de/~luck/"><img src="2013/-media/portrait/kai.png" alt="Jeremy Tai Abbett" width="166" height="166" align="right" border="0" /></a></h3>
+				<p>Kommend aus der Forschung im Bereich der künstlichen Intelligenz ist Kai von Luck seit 1992 <a href="http://users.informatik.haw-hamburg.de/~luck/">als Professor an der HAW Hamburg</a> Initiator von einer Vielzahl von außergewöhnlichen Projekten. Seien es autonom Fußball spielende Roboter, <a href="http://livingplace.informatik.haw-hamburg.de/blog/">mitdenkende Wohnung</a> oder Kunstausstellungen schafft Kai es Studenten, Besucher und Partner aus Wirtschaft, Wissenschaft und Politik gleichermaßen zu begeistern und die klassische Informatik in einen bunten und interdisziplinären Kontext zu setzen.</p>
+				<p><a href="https://twitter.com/KaivonLuck/"><img src="-media/general/twitter.png" alt="" width="22" height="18" border="0" /></a></p>
+				<h3>Martin Kohler<img src="2013/-media/portrait/martin.png" alt="Martin Kohler" width="166" height="166" align="left" border="0" /></h3>
+				<p>Martin Kohler studierte Landschafts- und Freiraumplanung an der Leibniz Universität Hannover und der Southern Australia University, Adelaide. Als wissenschaftlicher Mitarbeiter und Dozent für Stadtfotografie an der <a href="http://www.hcu-hamburg.de">HafenCity Universität in Hamburg</a> nutzt und lehrt er wie man Stadt und städtische Freiräume verstehen kann und interessiert sich vor allem für die Orte, wo sich Stadt am meisten ändert.</p>
+				<p>Neben Lehre und Forschung, ist er Chefredakteur bei <a href="http://www.polis-magazin.com"><em>polis</em></a>, Kurator verschiedener Kunstprojekte im öffentlichen Raum wie der <a href="http://www.hafensafari.de">Hafensafari</a> und angeblich Weltenbummler. </p>
 			</div>
-		</div>
-		<div class="section drei">
 			<div class="maincolumn">
-				<a name="map"></a>
-				<h2>Landeplatz am 24.2.2013</h2>
+				<h3>more to come – stay tuned…<br />
+					<br />
+					<br />
+				</h3>
+				<h2><a id="map" name="map"></a>Flugkoordinaten und FlugTickets</h2>
+				<div align="center">
+					<p>Wir heben ab am 24.2.2013, Check-In ab 13 Uhr, Veranstaltungsende ca. 19 Uhr, dann ist ein gemeinsames Abendessen möglich</p>
+					<p><a class="button" title="iCal Event" href="2013/-media/rse.ics">Termin</a> <a class="button" title="Live Update aller Events von uxHH" href="http://www.google.com/calendar/ical/nrvnkquenm1nfen401t78qf6j0@group.calendar.google.com/public/basic.ics">uxHH Kalender</a> <a class="button register" href="http://wiki.raumschiffer.de">Flugtickets</a></p>
+				</div>
 			</div>
 		</div>
 		<div class="section map">
 			<iframe width='100%' height='600' frameBorder='0' src='http://a.tiles.mapbox.com/v3/mprove.map-38g9s122.html#3/53.55496705432474/9.927758173087236'></iframe>
 		</div>
-		<div class="section vier">
+		<div class="section drei">
 			<div class="maincolumn">
-				<h2><a name="crew"></a>Basis-Crew</h2>
-				<div class="fourcolumns">
-					<p><a href="http://www.supersoon.net">Andreas Popp</a> <a href="https://twitter.com/supersoon"><img src="-media/general/twitter.png" alt="" width="22" height="18" border="0" /></a></p>
-					<p><a href="http://www.ifluxplus.com/">Christian Graf</a></p>
-					<p><a href="http://www.ico-online.com/">Daniel Schäfer</a></p>
-					<p><a title="Xing Profil" href="https://www.xing.com/profile/Kristina_Zoellner">Kristina Zöllner</a></p>
-					<p><a href="https://www.xing.com/profile/Michael_Schudy">Michael Schudy</a> <a href="https://twitter.com/mschudy"><img src="-media/general/twitter.png" alt="" height="18" width="22" border="0" /></a></p>
-					<p><a href="http://www.ico-online.com/">Malte Lüken</a></p>
-					<p><a href="http://www.mprove.de">Matthias Müller-Prove</a> <a href="http://twitter.com/mprove"><img src="-media/general/twitter.png" alt="" width="22" height="18" border="0" /></a></p>
-					<p><a title="Xing Profil" href="https://www.xing.com/profile/Matthias_Vogt24">Matthias Vogt</a> <a href="http://twitter.com/matthiasvogt"><img src="-media/general/twitter.png" alt="" height="18" width="22" border="0" /></a></p>
-					<p><a href="http://www.xing.com/profile/Monic_Meisel">Monic Meisel</a> <a href="http://twitter.com/monic2001"><img src="-media/general/twitter.png" alt="" width="22" height="18" border="0" /></a></p>
-					<p><a href="http://www.filesperhour.de/">Valentin Mayer</a> <a href="http://twitter.com/filesperhour"><img src="-media/general/twitter.png" alt="" width="22" height="18" border="0" /></a></p>
+				<h2><a id="crew" name="crew"></a>Basis-Crew</h2>
+				<div class="threecolumns">
+					<p><a title="supersoon" href="http://www.supersoon.net"><img class="crew" src="2013/-media/portrait/andreas.png" alt="Andreas Popp" width="166" height="166" border="0" />Andreas Popp</a> <a href="https://twitter.com/supersoon"><img src="-media/general/twitter.png" alt="" width="22" height="18" border="0" /></a></p>
+					<p><a title="iflux" href="http://www.ifluxplus.com/"><img class="crew" src="2013/-media/portrait/christian.png" alt="Christian Graf" width="166" height="166" border="0" />Christian Graf</a></p>
+					<p><a title="ico-online" href="http://www.ico-online.com/"><img class="crew" src="2013/-media/portrait/daniel.png" alt="Daniel Schäfer" width="166" height="166" border="0" />Daniel Schäfer</a></p>
+					<p><a title="Xing Profil" href="https://www.xing.com/profile/Kristina_Zoellner"><img class="crew" src="2013/-media/portrait/kristina.png" alt="Kristina Zöllner" width="166" height="166" border="0" />Kristina Zöllner</a></p>
+					<p><a title="Xing Profil" href="https://www.xing.com/profile/Michael_Schudy"><img class="crew" src="2013/-media/portrait/michael.png" alt="Michael Schudy" width="166" height="166" border="0" />Michael Schudy</a> <a href="https://twitter.com/MichaelSchudy"><img src="-media/general/twitter.png" alt="" height="18" width="22" border="0" /></a></p>
+					<p><a title="ico-online" href="http://www.ico-online.com/"><img class="crew" src="2013/-media/portrait/malte.png" alt="Malte Lüken" width="166" height="166" border="0" />Malte Lüken</a></p>
+					<p><a title="mprove" href="http://www.mprove.de"><img class="crew" src="2013/-media/portrait/mprove.png" alt="Matthias Müller-Prove" width="166" height="166" border="0" />Matthias Müller-Prove</a> <a href="http://twitter.com/mprove"><img src="-media/general/twitter.png" alt="" width="22" height="18" border="0" /></a></p>
+					<p><a title="Xing Profil" href="https://www.xing.com/profile/Matthias_Vogt24"><img class="crew" src="2013/-media/portrait/matthias.png" alt="Matthias Vogt" width="166" height="166" border="0" />Matthias Vogt</a> <a href="http://twitter.com/matthiasvogt"><img src="-media/general/twitter.png" alt="" height="18" width="22" border="0" /></a></p>
+					<p><a title="Xing Profil" href="http://www.xing.com/profile/Monic_Meisel"><img class="crew" src="2013/-media/portrait/monic.png" alt="Monic Meisel" width="166" height="166" border="0" />Monic Meisel</a> <a href="http://twitter.com/monic2001"><img src="-media/general/twitter.png" alt="" width="22" height="18" border="0" /></a></p>
+					<p><a title="files per hour" href="http://www.filesperhour.de/"><img class="crew" src="2013/-media/portrait/valentin.png" alt="Valentin Mayer" width="166" height="166" border="0" />Valentin Mayer</a> <a href="http://twitter.com/filesperhour"><img src="-media/general/twitter.png" alt="" width="22" height="18" border="0" /></a></p>
 				</div>
 			</div>
 		</div>
-		<div class="section drei">
-			<div class="maincolumn">
-				<h2><a name="astronauten"></a>Astronauten</h2>
-<!--~~~~~~~~~~~~~~~~~ Include these JS files once: jQuery then plugin -->
-				<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-				<script type="text/javascript" src="http://twitter-friends-widget.googlecode.com/files/jquery.twitter-friends-2.0.min.js"></script>
-<!---~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~--><!--~~~~~~~~~~~~~~~~~~~~~~~ required HTML -->
-				<div class="twitter-friends">
-					<!-- {
-	username:'raumschifferde',
-	friends:1,
-	users_max:32,
-	users_random:1,
-	user_name:0,
-	user_animate:'',
-	header:0
-} --></div>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~--></div>
-		</div>
 		<div class="section vier">
 			<div class="maincolumn">
-				<h2><a href="https://twitter.com/raumschifferde">@raumschifferde <img src="-media/general/twitter.png" alt="" width="22" height="18" align="top" border="0" /></a></h2>
+				<h2><a id="tweets" name="tweets"></a><a href="https://twitter.com/raumschifferde">@raumschifferde <img src="-media/general/twitter.png" alt="" width="22" height="18" align="top" border="0" /></a></h2>
 				<a width="450" class="twitter-timeline" data-dnt=true href="https://twitter.com/raumschifferde" data-widget-id="273323227273625600">Tweets by @raumschifferde</a>
 					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 					<a width="450" class="twitter-timeline" data-dnt=true href="https://twitter.com/search?q=%23rse13" data-widget-id="273324441201672192">Tweets about "#rse13"</a>
@@ -134,16 +158,21 @@
 		</div>
 		<csobj csref="_components/13/footer.html" occur="40" t="Component">
 			<div class="sponsors">
-				<h2>Sponsoren</h2>
-				<a title="freifunk.net" href="http://start.freifunk.net/"><img src="-media/logo/freifunk.png" alt="" height="70" width="73" border="0"></a><a title="Human Interface Design" href="http://www.human-interface.de/"><img class="dsR1" src="-media/logo/hid.png" alt="Human Interface Design" border="0" /></a><a title="Sponsoren gesucht" href="2013/sponsoring.html"><img src="2013/-media/parker.gif" alt="Sponsoren gesucht" width="109" height="71" border="0"></a></div>
+				<h2><a id="sponsoren" name="sponsoren"></a>Sponsoren</h2>
+				<a title="eparo" href="http://www.eparo.de/"><img class="dsR7" src="-media/logo/eparo.png" alt="eparo" border="0"></a><a title="freifunk.net" href="http://start.freifunk.net/"><img src="-media/logo/freifunk.png" alt="freifunk" height="70" width="73" border="0"></a><a title="Human Interface Design" href="http://www.human-interface.de/"><img class="dsR1" src="-media/logo/hid.png" alt="Human Interface Design" border="0" /></a><a title="Sponsoren gesucht" href="2013/sponsoring.html"><img src="2013/-media/parker.gif" alt="Sponsoren gesucht" width="109" height="71" border="0"></a><a title="effective WEBWORK" href="http://www.effective-webwork.de/"><img class="dsR6" src="-media/logo/effectivewebwork.png" alt="effective WEBWORK" border="0"></a></div>
+			<a href="/_components/13/footer.html#top" class="scroll scotty">Beam me up!</a>
 			<div class="footer">
-				<a href="#">Beam me up!</a>
+				<csobj csref="_components/13/social-blue.html" occur="76" t="Component">
+					<ul class="social">
+						<li><a title="Tickets f&uuml;r das #RSE13" href="http://wiki.raumschiffer.de"><img src="-media/general/ticket.png" alt="Tickets" width="22" height="18" border="0" /></a></li>
+						<li><a title="Mediathek" href="media/index.html"><img src="-media/general/media.png" alt="Mediathek" width="22" height="18" border="0" /></a></li>
+						<li><a title="facebook" href="http://www.facebook.com/raumschifferde"><img src="-media/general/fb.png" alt="facebook" width="22" height="18" border="0" /></a></li>
+						<li><a title="twitter" href="http://twitter.com/raumschifferde"><img width="22" height="18" src="-media/general/twitter.png" alt="twitter" border="0" /></a></li>
+					</ul>
+				</csobj>
 				<ul class="navigation">
-					<li><a href="index.html">Home</a></li>
-					<li><a href="media/index.html">Mediathek</a></li>
+					<li><a href="index.html">RSE13</a></li>
 					<li><a href="impressum.html">Impressum</a></li>
-					<li><a href="http://www.facebook.com/raumschifferde">facebook</a></li>
-					<li><a href="http://twitter.com/raumschifferde">twitter</a></li>
 				</ul>
 			</div>
 			<!-- Start of StatCounter Code -->

@@ -1,129 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml">	<head>		<meta http-equiv="content-type" content="text/html;charset=utf-8" />		<meta name="generator" content="Adobe GoLive" />		<title>Raum Schiff Erde - Mediathek</title>		<link href="../-style/rse13.css" rel="stylesheet" type="text/css" media="all" />		<link href="../-style/23thumbnails.css" rel="stylesheet" type="text/css" media="all" />		<script type="text/javascript"><!--
-function writeReversePhotos(num) {
-    numberOfPhotos = num;
-
-    // Count photos
-    for (photo_id in photos) {
-        photoCount++;
-    }
-
-    // Build
-    if ( display23.layout=="nonstyled" ) {
-
-    	document.write('<div id="photos23">');
-        if ( photoCount>numberOfPhotos ) {
-            document.write('<a id="prev23" style="display:none;" href="javascript:jump(-numberOfPhotos);">&laquo;</a> ');
-            document.write('<a id="next23" href="javascript:jump(numberOfPhotos);">&raquo;</a> ');
-        }
- 
- 
- 		// MMP: read IDs
-  		temp_photos = new Object();
-  		var j = 0;
-  		for (photo_id in photos) {  		
-  			temp_photos[ j ]= photo_id;
-  			j++;
-         }
- 
-  		// build reverse array
-  		reverse_photos = new Object();
-  		var k = photoCount -1;
-  		for (photo_id in photos) {
-  		
-  			reverse_photos[ temp_photos[k] ] = photos[photo_id];
-  			k--;
-         	}
-        
-        // MMP: exchange 
-		photos = reverse_photos;
- 
- 
-        var i = 1;
-        for (photo_id in photos) {
-            document.write('<span id="display23content-'+i+'">');
-            document.write(getPhotoHTML(photo_id));
-            document.write('</span>');
-      	    i++;
-            if (num && i>num) break;
-         }
-
-
-        if ( display23.linkToAccount ) {
-	   document.write('<a href="http://www.23hq.com/mprove/">See all the photos on 23</a>');
-        }
-    	document.write('</div>');
-
-    } else {
-        var style = "";
-        if ( display23.backgroundColor.length ) {
-	    style += 'background-color:'+display23.backgroundColor+';';
-	}
-        if ( display23.borderColor.length ) {
-	    style += 'border: 1px solid'+display23.borderColor+';';
-	}
-    	document.write('<table id="photos23" style="'+style+'">');
-
-        if ( display23.layout=="vertical" ) {
-	    // Styled, vertical
-            if ( photoCount>numberOfPhotos ) {
-                document.write('<tr>');
-                document.write('<td width="15" align="left" rowspan="'+numberOfPhotos+'"><a id="prev23" style="font-size:18pt; text-decoration:none; display:none;" href="javascript:jump(-numberOfPhotos);">&laquo;</a></td> ');
-                document.write('');        
-            }
-
-            var i = 1;
- 	    for (photo_id in photos) {
-                if ( i>1 || photoCount<=numberOfPhotos ) {
-		    document.write('<tr>');
-		}
-
-                document.write('<td align="center"><span id="display23content-'+i+'">');
-                document.write(getPhotoHTML(photo_id));
-                document.write('</span></td>');
-
-
-                if ( i==1 && photoCount>numberOfPhotos ) {
-                    document.write('<td width="15" align="right" rowspan="'+numberOfPhotos+'"><a id="next23" style="font-size:18pt; text-decoration:none;" href="javascript:jump(numberOfPhotos);">&raquo;</a></td></tr>');
-                } else {
-		    document.write('</tr>');
-		}
-
-        	i++;
-        	if (num && i>num) break;
-    	    }
-
-
-            if ( display23.linkToAccount ) {
-                document.write('<tr><td align="center" colspan="'+ (photoCount>numberOfPhotos ? 3 : 1) +'"><a href="http://www.23hq.com/mprove/">See all the photos on 23</a></td></tr>');
-    	    }
-	} else {
-	    // Styled, horizontal
-	    document.write('<tr>');
-            if ( photoCount>numberOfPhotos ) {
-                document.write('<td width="15" align="left"><a id="prev23" style="font-size:18pt; text-decoration:none; display:none;" href="javascript:jump(-numberOfPhotos);">&laquo;</a></td> ');
-            }
-
-            var i = 1;
- 	    for (photo_id in photos) {
-                  document.write('<td align="center"><span id="display23content-'+i+'">');
-                  document.write(getPhotoHTML(photo_id));
-             	  document.write('</span></td>');
-        	  i++;
-        	  if (num && i>num) break;
-    	    }
-
-            if ( photoCount>numberOfPhotos ) {
-                document.write('<td width="15" align="right"><a id="next23" style="font-size:18pt; text-decoration:none;" href="javascript:jump(numberOfPhotos);">&raquo;</a></td> ');
-            }
-	    document.write('</tr>');
-
-            if ( display23.linkToAccount ) {
-                document.write('<tr><td align="center" colspan="'+ (photoCount>numberOfPhotos ? numberOfPhotos+2 : numberOfPhotos) +'"><a href="http://www.23hq.com/mprove/">See all the photos on 23</a></td></tr>');
-    	    }
-        }
-
-    	document.write('</table>');
-    }}//--></script>		<csimport user="../_components/footerS.html" occur="40">			<style type="text/css" media="all"><!--.dsR1 /*agl rulekind: base;*/ { width: 173px; height: 70px; }.dsR5 /*agl rulekind: base;*/ { width: 180px; height: 70px; }.dsR6 /*agl rulekind: base;*/ { width: 218px; height: 70px; }.dsR7 /*agl rulekind: base;*/ { width: 181px; height: 70px; }--></style>		</csimport>		<csimport user="../_components/13/header.html" occur="91">			<link href='http://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>			<link href='http://fonts.googleapis.com/css?family=Varela' rel='stylesheet' type='text/css'>		</csimport>	</head>	<body>		<div class="header">			<csobj csref="../_components/13/header.html" occur="91" t="Component">				<ul class="navigation">					<li><a href="../index.html">Home</a></li>					<li><a href="index.html">Mediathek</a></li>					<li><a href="http://www.facebook.com/raumschifferde">facebook</a></li>					<li><a href="http://twitter.com/raumschifferde">twitter</a></li>				</ul>			</csobj></div>		<div class="section eins">			<div class="maincolumn">				<h2>Das Raum Schiff Erde 2010 in Bildern</h2>			</div>		</div>		<div class="section eins map">			<script type="text/javascript" src="http://www.23hq.com/resources/um-style/general-v3.js"></script>			<script type="text/javascript" src="http://www.23hq.com/Prometheus/script/data.js?mode=basic&selection=public&limit=99&sort=uploaded"></script>			<script type="text/javascript" src="http://www.23hq.com/Prometheus/script/functions.js"></script>			<script>    display23['linkToAccount'] = 0;    display23['size'] = 'standard';    display23['layout'] = 'nonstyled';    display23['photoinfoTaken'] = 0;    display23['photoinfoTags'] = 0;    display23['photoinfoAlbums'] = 0;    display23['photoinfoWords'] = 0;    writeReversePhotos();</script>		</div>		<div class="section zwei">			<div class="maincolumn">				<h2>Das Raum Schiff Erde 2011 in Bildern</h2>			</div>		</div>		<div class="section zwei map">			<script type="text/javascript" src="http://www.23hq.com/resources/um-style/general-v3.js"></script>			<script type="text/javascript" src="http://www.23hq.com/mprove/script/data.js?mode=basic&tags=rse11&selection=tags&limit=99&sort=uploaded"></script>			<script type="text/javascript" src="http://www.23hq.com/mprove/script/functions.js"></script>			<script>    display23['linkToAccount'] = 0;    display23['size'] = 'standard';    display23['layout'] = 'nonstyled';    display23['photoinfoTaken'] = 0;    display23['photoinfoTags'] = 0;    display23['photoinfoAlbums'] = 0;    display23['photoinfoWords'] = 0;    writeReversePhotos();</script>		</div>		<div class="section drei">			<div class="maincolumn">				<h2>Weitere Bilder</h2>				<h3>RSE10</h3>				<ul>					<li><a href="http://angermeyer-fotografie.de/rse10/">von Helge Angermeyer</a></li>					<li><a href="http://www.flickr.com/photos/kaeru/sets/72157623394483317/">by Kars Alfrink</a></li>					<li><a href="http://www.flickr.com/photos/22770232@N03/sets/72157623357982085/">von smartens83</a></li>				</ul>				<h3>RSE11</h3>				<ul>					<li><a href="http://angermeyer-fotografie.de/rse11/">von Helge Angermeyer</a></li>					<li><a href="https://picasaweb.google.com/ifluxplus/RaumSchiffErde2011">von Christian Graf</a></li>					<li><a href="http://mprove.tumblr.com/tagged/rse11">mprove.tumblr.com/tagged/rse11</a></li>				</ul>			</div>		</div>		<csobj csref="../_components/footerS.html" occur="40" t="Component">			<div class="sponsors">				<h2>Sponsoren</h2>				<a title="Live Musik Soul Hamburg f&uuml;r Veranstaltungen - Soulsteady" href="http://www.soulsteady.de/"><img src="../-media/logo/soulsteady.png" alt="Live Musik Soul Hamburg fuer Veranstaltungen - Soulsteady" height="70" width="121" border="0"></a><a title="Human Interface Design" href="http://www.human-interface.de/"><img class="dsR5" src="../-media/logo/hid.png" alt="Human Interface Design" border="0" /></a><a title="Xalmiento, Web-Services f&uuml;r Verlage" href="http://www.xalmiento.com/"><img class="dsR1" src="../-media/logo/xalmiento.png" alt="Xalmiento" border="0"></a><a title="effective WEBWORK" href="http://www.effective-webwork.de/"><img class="dsR6" src="../-media/logo/effectivewebwork.png" alt="effective WEBWORK" border="0"></a><a title="eparo" href="http://www.eparo.de/"><img class="dsR7" src="../-media/logo/eparo.png" alt="eparo" border="0"></a><a title="freifunk.net" href="http://start.freifunk.net/"><img src="../-media/logo/freifunk.png" alt="" height="70" width="73" border="0"></a><a title="Hamburger Informatik Forum e.V." href="http://www.hiforum.de"><img src="../-media/logo/HIForum.png" alt="Hamburger Informatik Forum e.V." height="70" width="117" border="0"></a><a title="Sponsoren gesucht" href="../2013/sponsoring.html"><img src="../2013/-media/parker.gif" alt="Sponsoren gesucht" width="109" height="71" border="0"></a></div>			<div class="footer">				<a href="#">Beam me up!</a>				<ul class="navigation">					<li><a href="../index.html">Home</a></li>					<li><a href="index.html">Mediathek</a></li>					<li><a href="../impressum.html">Impressum</a></li>					<li><a href="http://www.facebook.com/raumschifferde">facebook</a></li>					<li><a href="http://twitter.com/raumschifferde">twitter</a></li>				</ul>			</div>			<!-- Start of StatCounter Code -->			<script type="text/javascript">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml">	<head>		<meta http-equiv="content-type" content="text/html;charset=utf-8" />		<meta name="generator" content="Adobe GoLive" />		<title>Raum Schiff Erde - Mediathek</title>		<link href="../-style/rse13.css" rel="stylesheet" type="text/css" media="all" />		<link href="../-style/23thumbnails.css" rel="stylesheet" type="text/css" media="all" />		<script type="text/javascript"><!--function writeReversePhotos(num) {    numberOfPhotos = num;    // Count photos    for (photo_id in photos) {        photoCount++;    }    // Build    if ( display23.layout=="nonstyled" ) {    	document.write('<div id="photos23">');        if ( photoCount>numberOfPhotos ) {            document.write('<a id="prev23" style="display:none;" href="javascript:jump(-numberOfPhotos);">&laquo;</a> ');            document.write('<a id="next23" href="javascript:jump(numberOfPhotos);">&raquo;</a> ');        }   		// MMP: read IDs  		temp_photos = new Object();  		var j = 0;  		for (photo_id in photos) {  		  			temp_photos[ j ]= photo_id;  			j++;         }   		// build reverse array  		reverse_photos = new Object();  		var k = photoCount -1;  		for (photo_id in photos) {  		  			reverse_photos[ temp_photos[k] ] = photos[photo_id];  			k--;         	}                // MMP: exchange 		photos = reverse_photos;          var i = 1;        for (photo_id in photos) {            document.write('<span id="display23content-'+i+'">');            document.write(getPhotoHTML(photo_id));            document.write('</span>');      	    i++;            if (num && i>num) break;         }        if ( display23.linkToAccount ) {	   document.write('<a href="http://www.23hq.com/mprove/">See all the photos on 23</a>');        }    	document.write('</div>');    } else {        var style = "";        if ( display23.backgroundColor.length ) {	    style += 'background-color:'+display23.backgroundColor+';';	}        if ( display23.borderColor.length ) {	    style += 'border: 1px solid'+display23.borderColor+';';	}    	document.write('<table id="photos23" style="'+style+'">');        if ( display23.layout=="vertical" ) {	    // Styled, vertical            if ( photoCount>numberOfPhotos ) {                document.write('<tr>');                document.write('<td width="15" align="left" rowspan="'+numberOfPhotos+'"><a id="prev23" style="font-size:18pt; text-decoration:none; display:none;" href="javascript:jump(-numberOfPhotos);">&laquo;</a></td> ');                document.write('');                    }            var i = 1; 	    for (photo_id in photos) {                if ( i>1 || photoCount<=numberOfPhotos ) {		    document.write('<tr>');		}                document.write('<td align="center"><span id="display23content-'+i+'">');                document.write(getPhotoHTML(photo_id));                document.write('</span></td>');                if ( i==1 && photoCount>numberOfPhotos ) {                    document.write('<td width="15" align="right" rowspan="'+numberOfPhotos+'"><a id="next23" style="font-size:18pt; text-decoration:none;" href="javascript:jump(numberOfPhotos);">&raquo;</a></td></tr>');                } else {		    document.write('</tr>');		}        	i++;        	if (num && i>num) break;    	    }            if ( display23.linkToAccount ) {                document.write('<tr><td align="center" colspan="'+ (photoCount>numberOfPhotos ? 3 : 1) +'"><a href="http://www.23hq.com/mprove/">See all the photos on 23</a></td></tr>');    	    }	} else {	    // Styled, horizontal	    document.write('<tr>');            if ( photoCount>numberOfPhotos ) {                document.write('<td width="15" align="left"><a id="prev23" style="font-size:18pt; text-decoration:none; display:none;" href="javascript:jump(-numberOfPhotos);">&laquo;</a></td> ');            }            var i = 1; 	    for (photo_id in photos) {                  document.write('<td align="center"><span id="display23content-'+i+'">');                  document.write(getPhotoHTML(photo_id));             	  document.write('</span></td>');        	  i++;        	  if (num && i>num) break;    	    }            if ( photoCount>numberOfPhotos ) {                document.write('<td width="15" align="right"><a id="next23" style="font-size:18pt; text-decoration:none;" href="javascript:jump(numberOfPhotos);">&raquo;</a></td> ');            }	    document.write('</tr>');            if ( display23.linkToAccount ) {                document.write('<tr><td align="center" colspan="'+ (photoCount>numberOfPhotos ? numberOfPhotos+2 : numberOfPhotos) +'"><a href="http://www.23hq.com/mprove/">See all the photos on 23</a></td></tr>');    	    }        }    	document.write('</table>');    }}//--></script>		<meta name="viewport" width="device-width">		<meta property="og:site_name" content="Raum Schiff Erde" />		<meta property="og:type" content="website" />		<meta property="og:image" content="http://www.raumschiffer.de/_media/brand/twitter13.jpg" />				<script type="text/javascript" src="http://code.jquery.com/jquery-1.4.2.min.js"></script>		<script type="text/javascript"><!--			jQuery(document).ready(function($) {				$(".scroll").click(function(event){							event.preventDefault();					$('html,body').animate({scrollTop:$(this.hash).offset().top-42}, 1555); });				});			//-->		</script>		<csimport user="../_components/13/header.html" occur="91">			<link href='http://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>			<link href='http://fonts.googleapis.com/css?family=Varela' rel='stylesheet' type='text/css'>		</csimport>		<csimport user="../_components/footerS.html" occur="40">			<csimport user="../_components/13/social-blue.html" occur="76">				<link href='http://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>				<link href='http://fonts.googleapis.com/css?family=Varela' rel='stylesheet' type='text/css'>			</csimport>			<style type="text/css" media="all"><!--.dsR1 /*agl rulekind: base;*/ { width: 173px; height: 70px; }.dsR5 /*agl rulekind: base;*/ { width: 180px; height: 70px; }.dsR6 /*agl rulekind: base;*/ { width: 218px; height: 70px; }.dsR7 /*agl rulekind: base;*/ { width: 181px; height: 70px; }--></style>		</csimport>	</head>	<body>		<div class="header" id="top">			<csobj csref="../_components/13/header.html" occur="91" t="Component"><csobj csref="../_components/13/social-white.html" occur="44" t="Component">					<ul class="social">						<li><a title="Tickets f&uuml;r das #RSE13" href="http://wiki.raumschiffer.de"><img src="../-media/general/ticket-white.png" alt="Tickets" width="22" height="18" border="0" /></a></li>						<li><a title="Mediathek" href="index.html"><img src="../-media/general/media-white.png" alt="Mediathek" width="22" height="18" border="0" /></a></li>						<li><a title="facebook" href="http://www.facebook.com/raumschifferde"><img src="../-media/general/fb-white.png" alt="facebook" width="22" height="18" border="0" /></a></li>						<li><a title="twitter" href="http://twitter.com/raumschifferde"><img width="22" height="18" src="../-media/general/twitter-white.png" alt="twitter" border="0" /></a></li>					</ul>				</csobj>				<ul class="navigation">					<li><a name="top" href="../index.html">RSE13</a></li>				</ul>			</csobj></div>		<div class="section eins">			<div class="maincolumn">				<h2>Das Raum Schiff Erde 2010 in Bildern</h2>			</div>		</div>		<div class="section eins map">			<script type="text/javascript" src="http://www.23hq.com/resources/um-style/general-v3.js"></script>			<script type="text/javascript" src="http://www.23hq.com/Prometheus/script/data.js?mode=basic&selection=public&limit=99&sort=uploaded"></script>			<script type="text/javascript" src="http://www.23hq.com/Prometheus/script/functions.js"></script>			<script>    display23['linkToAccount'] = 0;    display23['size'] = 'standard';    display23['layout'] = 'nonstyled';    display23['photoinfoTaken'] = 0;    display23['photoinfoTags'] = 0;    display23['photoinfoAlbums'] = 0;    display23['photoinfoWords'] = 0;    writeReversePhotos();</script>		</div>		<div class="section zwei">			<div class="maincolumn">				<h2>Weitere Bilder 2010</h2>				<ul>					<li><a href="http://angermeyer-fotografie.de/rse10/">von Helge Angermeyer</a></li>					<li><a href="http://www.flickr.com/photos/kaeru/sets/72157623394483317/">by Kars Alfrink</a></li>					<li><a href="http://www.flickr.com/photos/22770232@N03/sets/72157623357982085/">von smartens83</a></li>				</ul>			</div>		</div>		<div class="section drei">			<div class="maincolumn">				<h2>Das Raum Schiff Erde 2011 in Bildern</h2>			</div>		</div>		<div class="section drei map">			<script type="text/javascript" src="http://www.23hq.com/resources/um-style/general-v3.js"></script>			<script type="text/javascript" src="http://www.23hq.com/mprove/script/data.js?mode=basic&tags=rse11&selection=tags&limit=99&sort=uploaded"></script>			<script type="text/javascript" src="http://www.23hq.com/mprove/script/functions.js"></script>			<script>    display23['linkToAccount'] = 0;    display23['size'] = 'standard';    display23['layout'] = 'nonstyled';    display23['photoinfoTaken'] = 0;    display23['photoinfoTags'] = 0;    display23['photoinfoAlbums'] = 0;    display23['photoinfoWords'] = 0;    writeReversePhotos();</script>		</div>		<div class="section vier">			<div class="maincolumn">				<h2>Weitere Bilder 2011</h2>				<ul>					<li><a href="http://angermeyer-fotografie.de/rse11/">von Helge Angermeyer</a></li>					<li><a href="https://picasaweb.google.com/ifluxplus/RaumSchiffErde2011">von Christian Graf</a></li>					<li><a href="http://mprove.tumblr.com/tagged/rse11">mprove.tumblr.com/tagged/rse11</a></li>				</ul>			</div>		</div>		<csobj csref="../_components/footerS.html" occur="40" t="Component">			<div class="sponsors">				<h2><a id="sponsoren" name="sponsoren"></a>Sponsoren</h2>				<a title="Live Musik Soul Hamburg f&uuml;r Veranstaltungen - Soulsteady" href="http://www.soulsteady.de/"><img src="../-media/logo/soulsteady.png" alt="Live Musik Soul Hamburg fuer Veranstaltungen - Soulsteady" height="70" width="121" border="0"></a><a title="Human Interface Design" href="http://www.human-interface.de/"><img class="dsR5" src="../-media/logo/hid.png" alt="Human Interface Design" border="0" /></a><a title="Xalmiento, Web-Services f&uuml;r Verlage" href="http://www.xalmiento.com/"><img class="dsR1" src="../-media/logo/xalmiento.png" alt="Xalmiento" border="0"></a><a title="effective WEBWORK" href="http://www.effective-webwork.de/"><img class="dsR6" src="../-media/logo/effectivewebwork.png" alt="effective WEBWORK" border="0"></a><a title="eparo" href="http://www.eparo.de/"><img class="dsR7" src="../-media/logo/eparo.png" alt="eparo" border="0"></a><a title="freifunk.net" href="http://start.freifunk.net/"><img src="../-media/logo/freifunk.png" alt="" height="70" width="73" border="0"></a><a title="Hamburger Informatik Forum e.V." href="http://www.hiforum.de"><img src="../-media/logo/HIForum.png" alt="Hamburger Informatik Forum e.V." height="70" width="117" border="0"></a><a title="Sponsoren gesucht" href="../2013/sponsoring.html"><img src="../2013/-media/parker.gif" alt="Sponsoren gesucht" width="109" height="71" border="0"></a></div>			<a href="/_components/footerS.html#top" class="scroll scotty">Beam me up!</a>			<div class="footer">				<csobj csref="../_components/13/social-blue.html" occur="76" t="Component">					<ul class="social">						<li><a title="Tickets f&uuml;r das #RSE13" href="http://wiki.raumschiffer.de"><img src="../-media/general/ticket.png" alt="Tickets" width="22" height="18" border="0" /></a></li>						<li><a title="Mediathek" href="index.html"><img src="../-media/general/media.png" alt="Mediathek" width="22" height="18" border="0" /></a></li>						<li><a title="facebook" href="http://www.facebook.com/raumschifferde"><img src="../-media/general/fb.png" alt="facebook" width="22" height="18" border="0" /></a></li>						<li><a title="twitter" href="http://twitter.com/raumschifferde"><img width="22" height="18" src="../-media/general/twitter.png" alt="twitter" border="0" /></a></li>					</ul>				</csobj>				<ul class="navigation">					<li><a href="../index.html">RSE13</a></li>					<li><a href="../impressum.html">Impressum</a></li>				</ul>			</div>			<!-- Start of StatCounter Code -->			<script type="text/javascript">
 var sc_project=5302498; 
 var sc_invisible=1; 
 var sc_security="b3355caf"; 
